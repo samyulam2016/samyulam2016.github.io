@@ -1,0 +1,291 @@
+@import "../common.less";
+body {
+	background-color: @cf2;
+}
+/***** section *****/
+#section {
+	background-color: @cf2;
+	padding-bottom: 40px;
+
+	.goods-list {
+		width: @minW;
+		margin: 0 auto;
+		overflow: hidden;
+
+		@border: 1px solid @ce2;
+		li {
+			@w: 218px;
+			float: left;
+			width: @w;
+			border: @border;
+			background-color: @cff;
+			margin-top: 20px;
+			margin-right: 19px;
+
+			.goods-img {
+				width: @w;
+				height: @w;
+				border-bottom: @border;
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+
+			.goods-info {
+				padding: 20px 20px 0;
+
+				.intro {
+					color: @c66;
+					font-size: @fs14;
+					line-height: 26px;
+					max-height: 52px;
+					overflow: hidden;
+				}
+				.cost {
+					@h: 26px;
+					height: @h;
+					overflow: hidden;
+					margin-top: 8px;
+					
+					.point {
+						color: @cea0;
+						font-weight: bold;
+						font-size: @fs18;
+						line-height: @h;
+					}
+					.price {
+						float: right;
+						font-size: @fs14;
+						line-height: @h;
+					}
+				}
+			}
+			.btn {
+				@h: 30px;
+				display: block;
+				width: 90px;
+				height: @h;
+				border-radius: @border_radius;
+				text-align: center;
+				line-height: @h;
+				font-size: @fs14;
+				margin: 15px auto 20px;
+			}
+		}
+		li:hover {
+			border-color: @cec6;
+		}
+		.col-end {
+			margin-right: 0;
+		}
+	}
+	.pagination-wrap {
+		text-align: center;
+		margin-top: 60px;
+	}
+	.pagination {
+		display: inline-block;
+		overflow: hidden;
+		> * {
+			float: left;
+		}
+		a:hover {
+			background-color: @cee;
+		}
+		.bc() {
+			border: 1px solid @cdc;
+			background-color: @cff;
+			padding: 8px 15px;
+			font-size: @fs16;
+			display: block;
+
+		}
+		.home {
+			.bc();
+			color: @c008;
+		}
+
+		ul {
+			margin: 0 20px;
+			overflow: hidden;
+			li {
+				float: left;
+				a {
+					.bc();
+					color: @c66;
+				}
+			}
+			li.active {
+				a {
+					background-color: @c008;
+					color: @cff;
+				}
+			}
+		}
+		.right {
+			overflow: hidden;
+			> * {
+				float: left;
+			}
+			font-size: @fs16;
+			color: @c66;
+			line-height: 42px;
+			div {
+				input {
+					height: 34px;
+					line-height: 34px;
+					font-size: @fs16;
+					width: 50px;
+					border: 1px solid @cdc;
+					text-align: center;
+					margin: 0 5px;
+				}
+			}
+			a {
+				width: 90px;
+				height: 35px;
+				color: @cff;
+				line-height: 35px;
+				margin: 3.5px 15px;
+				border-radius: @border_radius;
+				background-color: @c008;
+			}
+		}
+	}
+}
+/***** section *****/
+
+/***** mask *****/
+#mask {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	// background: rgba(0, 0, 0, 0.5);
+	.mask_bg {
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		opacity: 0.5;
+		filter: alpha(opacity=50);
+	}
+	.pop-box {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		background-color: @cff;
+		border: 5px solid @ce2;
+		width: 646px;
+		height: 405px;
+
+		.title {
+			@h: 58px;
+			border-bottom: 1px solid @cdc;
+			font-size: @fs18;
+			color: @c008;
+			padding-left: 30px;
+			height: @h;
+			line-height: @h;
+		}
+		ul {
+			@h: 35px;
+			li {
+				font-size: @fs18;
+				overflow: hidden;
+				margin-top: 20px;
+				color: @c33;
+			}
+			.left, .right {
+				float: left;
+			}
+			.left {
+				line-height: @h;
+				text-align: right;
+				width: 140px;
+				span {
+					color: @cec6;
+					margin-right: 5px;
+				}
+			}
+			.right {
+				line-height: @h - 2;
+			}
+			
+			.input(@w:50px) {
+				border: 1px solid @cdc;
+				// display: block;
+				width: @w;
+				height: @h - 2;
+				line-height: @h - 2;
+				font-size: @fs16;
+				padding-left: 12px;
+			}
+
+			.item1 .right {
+				input {
+					.input(318px);
+				}
+			}
+			.item2 .right {
+				select {
+					border: 1px solid @cdc;
+					display: inline-block;
+					padding: 7px 5px;
+					font-size: @fs16;
+					width: 140px;
+				}
+			}
+
+			.item3 .right {
+				input {
+					.input(446px);
+				}
+			}
+			.item4 .right {
+				font-size: @fs16;
+				.mobile {
+					.input(138px);
+				}
+				.pre {
+					padding: 0;
+					.input(37px);
+					margin-right: 10px;
+				}
+				.pnum {
+					.input(113px);
+					margin-left: 10px;
+				}
+			}
+		}
+
+		.btn-wrap {
+			margin-top: 36px;
+			margin-bottom: 41px;
+			overflow: hidden;
+			.btn {
+				display: block;
+				width: 90px;
+				height: 35px;
+				line-height: 35px;
+				font-size: @fs18;
+				text-align: center;
+				border-radius: @border_radius;
+			}
+			.btn.return {
+				float: left;
+				background-color: @c99;
+				margin-left: 160px;
+			}
+			.btn.save {
+				float: right;
+				margin-right: 160px;
+			}
+		}
+	}
+}
+/***** mask *****/

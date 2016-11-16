@@ -1,0 +1,187 @@
+@font16:16px;
+@font18:18px;
+@font34:34px;
+@import "../../less/common.less";
+#header {
+    min-width: @minW;
+
+    .nav-wrap {
+        width: 100%;
+        background-color: @cee;
+
+        .nav {
+            width: @minW;
+            margin: 0 auto;
+            .left {
+                float: left;
+
+                .current {
+                    &:after {
+                        content: "";
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 10px;
+                        height: 6px;
+                        background: url(../../img/icons.png) no-repeat;
+                        background-position: 0 0;
+                        margin-left: 5px;
+                    }
+                }
+            }
+            .right {
+                float: right;
+                overflow: hidden;
+                li {
+                    float: left;
+                }
+                .item {
+                    margin-left: 17px;
+                }
+                .item:hover {
+                    color: #C81623;
+                }
+            }
+            .phone {
+                &:before {
+                    content: "";
+                    display: inline-block;
+                    width: 11px;
+                    height: 15px;
+                    background: url(../../img/icons.png) no-repeat;
+                    background-position: -1px -55px;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                }
+            }
+            .bor {
+                padding-right: 17px;
+            }
+            span, a {
+                font-size: @fs12;
+                color: @c66;
+                line-height: 34px;
+            }
+        }
+    }
+}
+#footer {
+    // background-color: @cff;
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px solid @cd3;
+    .bottom {
+        width: 720px;
+        text-align: center;
+        margin: 0 auto;
+        span {
+            font-size: @fs14;
+            color: @c99;
+        }
+        .middle {
+            margin: 0 12px 0 15px;
+            border-right: 1px solid @c99;
+            padding-right: 12px;
+        }
+        .txt {
+            margin-top: 12px;
+            span {
+                color: #008de1;
+                margin: 0 8px;
+            }
+        }
+    }
+}
+.submit{
+                display: block;
+                width: 170px;
+                height: 45px;
+                background: #EC6A17;
+                font-size: @font18;
+                line-height: 45px;
+                text-align: center;
+                border-radius: 5px;
+                color: #fff;
+                margin-top: 40px;
+           }
+.pay_topup_wrap{
+    width: 1180px;
+    border: 1px solid #ccc;
+    padding: 40px 40px 60px;
+    font-size: @font16;
+    margin: auto;
+    margin-top: 25px;
+    .pay_top_wrap_header{
+        height: 82px;
+        line-height: 82px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #ccc;
+        .yihe_logo{
+            display: block;
+            float: left;
+            width: 144px;
+            height: 82px;
+            background: url(../../img/logo.png) no-repeat;
+        }
+        .pay_top_wrap_header_content_right{
+            float: right;
+            margin-top: 39px;
+            span{
+                display: block;
+                float: left;
+                font-size: @font18;
+                line-height: 44px;
+                text-align: center;
+                width: 238px;
+                height: 44px;
+                background: url(../../img/bind_phone_progress.png) no-repeat;              
+            }
+           
+            span.purchase{
+                width: 238px;
+                background-position: 3px 0;
+            }
+            span.purchase.active{
+                color: #fff;
+                background-position: 3px -203px;
+            }
+            span.purchase1{
+                width: 246px;
+                background-position: 0 -66px;
+            }
+            span.purchase1.active{
+                color: #fff;
+                background-position: 0 -260px;
+            }
+             span.purchase2{
+                 width: 243px;
+                background-position: 0 -136px;
+            }
+            span.purchase2.active{
+                color: #fff;
+                background-position: 0 -320px;
+            }
+        }
+    }
+    .succeed_submit_tips{
+    text-align: center;
+    padding-bottom: 30px;
+    div.firstchild{
+        width: 88px;
+        height: 85px;
+        background: url(../../img/success_icon.png) no-repeat;        
+        margin: 80px auto 40px;
+    }
+    div.lastchild{
+        font-size: @font34;
+        margin-bottom: 40px;
+    }
+    a{
+        .submit;
+        margin: auto;
+    }
+    .order_num{
+        margin-top: 53px;
+    }
+}
+}

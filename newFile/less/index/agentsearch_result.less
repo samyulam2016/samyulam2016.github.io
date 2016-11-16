@@ -1,0 +1,126 @@
+@contW:1180px;
+@col6:#666666;
+@orgC:#ff6d00;
+@grayC:#e5e5e5;
+@col3:#333333;
+@bgC:#ffffff;
+@cliC:747474;
+@bodyBg:#f2f2f2;
+@fontsize:16px;
+@borderC:#d3d3d3;
+@radius:4px;
+@priC:#ea0000;
+@boC:#e1e1e1;
+@import "../common";
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: @bodyBg;
+}
+.clearfix{
+    content:"";
+    display: block;
+    clear:both;
+}
+
+#content{
+    width:@contW;
+//  height: 200px;
+    margin: 0 auto;
+    background-color: @bodyBg;
+    // margin-bottom: 40px;
+   
+    .location{
+        width:100%;
+        height: 54px;
+        text-align: left;
+        font-size: @fontsize;
+        color:@col6;
+        line-height: 54px;
+//      font-weight: lighter;
+        .join_us{
+            color:@orgC;
+            text-decoration: none;
+        }
+    }
+    .product_list{
+        width:@minW - 40px;
+        padding: 19px;
+        padding-bottom: 0;
+        background-color: @cff;
+        border:1px solid @cd3;
+        .img_single{
+            width:270px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid @cff;
+            background-color: @cff;
+//          border:1px solid @boC;
+            float: left;
+            margin-right: 20px;
+//          box-sizing: border-box;
+            .tip_img{
+                
+                display: block;
+                width:100%;
+                position: relative;
+                img{
+                    width:100%;
+                    display: block;
+                }
+                span{
+                    display: block;
+                    position: absolute;
+                    bottom:0;
+                    left: 0;
+                    width:270px;
+                    height: 30px;
+                    background:url(../../img/icontips1.png) repeat;
+                    
+                    text-align: center;
+                    line-height: 30px;
+                    color:@cff;
+                    font-size: @fs16;
+                }
+            }
+           .single_icon{
+                font-size: @fs14;
+                margin-top: 14px;
+                overflow: hidden; 
+                color: #323333; 
+//              cursor: pointer;
+                span{
+                   display: inline-block;
+                   vertical-align: -5px;
+                    height: 20px;
+                    width: 36px;
+                    line-height: 20px;
+                    background:url(../../img/icons.png) -194px -21px no-repeat;    
+                }
+             
+                .icon1{
+                    background-position: -194px -51px;
+                }
+                .icon2{
+                    background-position: -194px -81px;
+                }
+            } 
+        }
+        .img_single2{
+            margin-right: 0;
+        }
+        .img_single:hover{
+            border-bottom: 2px solid #f90058;
+           
+        }
+        .img_single:hover .single_icon2{
+             color:#f90058;
+        }
+        
+        
+    }
+    
+
+}
+

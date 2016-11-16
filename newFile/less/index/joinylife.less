@@ -1,0 +1,191 @@
+@contW:1180px;
+@col6:#666666;
+@orgC:#ff6d00;
+@grayC:#e5e5e5;
+@col3:#333333;
+@bgC:#ffffff;
+@cliC:#747474;
+@bodyBg:#f2f2f2;
+@fontsize:16px;
+@borderC:#d3d3d3;
+@radius:4px;
+@c99:#999999;
+@import "../common";
+@bluC:#008de1;
+body {
+  background-color: @cf2;
+}
+*{
+    margin:0;
+    padding:0;
+}
+.clearfix{
+    content:"";
+    display: block;
+    clear:both;
+}
+#content{
+    width:100%;
+    background-color: @bodyBg;
+    color:@c33;
+    .top_img{
+        width:100%;
+        border:none;
+//  height: 200px;
+       
+        margin: 0 auto;
+        a{            
+            display: block;
+            min-width:@minW;
+            img{
+                display: block;
+                width:100%;
+            }
+        }
+    }
+    .bottom_de{
+        width:@minW;
+        margin: 0 auto;
+        .tips_click{
+               padding-top: 94px;
+               padding-bottom: 100px;
+               p{
+        
+                   font-size: @fs18;
+                   color: @c99;
+               }
+               .left_views{
+                   width:402px;
+                   height: 402px;
+                   border:1px solid @cec6;
+                   border-radius: 50%;
+                   text-align: center;
+                   float: left;
+                   .user{
+                       color:@cec6;
+                       font-size: @fs28;
+                       padding-top: 76px;
+                      margin-bottom: 32px;
+        
+                   }
+                   .function{
+                       font-size:2.4rem;
+                       color:@c66;
+                       margin-bottom: 32px;
+                   }
+                   .grow{
+                       margin-bottom: 32px;
+                   }
+                   .give_views{
+                       display: block;
+                       margin:0 auto;
+                       width:170px;
+                       height: 44px;
+                       background-color: @cec6;
+                       font-size: @fs18;
+                       line-height: 44px;
+                       color: @cff;
+                       border-radius: @border_radius;
+                   }
+               }
+               .right_views{
+                   float: right;
+                   border-color:@bluC;
+                   .user{
+                       color: @bluC;
+                   }
+                   .give_views{
+                       background-color:@bluC;
+                   }
+               }
+           }
+    }
+   
+
+}
+
+
+
+#mask{
+    width:100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+//  background: url(../../img/icontips.png) repeat;
+//  background-color: rgba(0,0,0,0.5);
+   
+    display: none;
+    .sumit_views{
+        width:654px;
+//      height: 400px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right:0;
+        bottom:0;
+        margin:auto;
+        background-color: @cff;
+        max-height: 400px;
+        border:4px solid @ce2;
+        .input_details{
+            width:566px;
+            min-height: 234px;
+            border:1px solid @cd3;
+
+            margin:40px auto 0 ;
+            .comment_datail{
+                display: block;
+                width:526px;
+                padding: 20px;
+                height: 160px;
+                resize: none;
+                border:none;
+                outline: none;
+
+
+            }
+            .letter_count{
+//                  width:100%;
+                    text-align: right;
+                    padding-right: 20px;
+                    color: @c99;
+                    font-size: @fs14;
+                }
+        }
+        .bottom_click{
+            text-align: center;
+            margin-top: 40px;
+            a{
+//              display: block;
+                float: left;
+                width:90px;
+                height: 36px;
+                text-align: center;
+                line-height: 36px;
+                font-size: @fs18;
+                background-color: @c99;
+                margin-left: 160px;
+                border-radius: @border_radius;
+                color:@cff;
+            }
+            .submit{
+                float: right;
+                margin:0;
+                margin-right: 160px;
+                background-color: @cec6;
+            }
+        }
+
+    }
+    .all_mask{
+        width:100%;
+        height: 100%;
+        background-color: #000000;
+        opacity:0.5;
+        filter:alpha(opacity=50);   
+        -moz-opacity:0.5;   
+        -khtml-opacity: 0.5;   
+        opacity: 0.5;   
+    }
+}

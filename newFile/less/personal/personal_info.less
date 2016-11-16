@@ -1,0 +1,145 @@
+@import "../common.less";
+
+#section {
+	.content {
+		width: 984px;
+		min-height: 544px;
+		float: right;
+		border: 1px solid @cd3;
+		background-color: @cff;
+		.title {
+			@h: 57px;
+			padding-left: 20px;
+			line-height: @h;
+			height: @h;
+			border-bottom: 1px solid @cd3;
+			color: @c008;
+			font-size: @fs18;
+		}
+		.info {
+			padding: 40px 40px 0;
+			li {
+				overflow: hidden;
+				margin-bottom: 20px;
+			}
+			.left, .right {
+				float: left;
+			}
+			.left {
+				text-align: right;
+				width: 90px;
+				font-size: @fs18;
+				color: @c33;
+				margin-right: 5px;
+			}
+			.item1 {
+				line-height: 49px;
+				.right {
+					a {
+						display: block;
+						line-height: 49px;
+						height: 49px;
+						color: @c008;
+						font-size: @fs14;
+					}
+					i {
+						display: inline-block;
+						width: 49px;
+						height: 49px;
+						background: url(../../img/icons.png) no-repeat;
+						background-position: -414px -346px;
+						vertical-align: middle;
+						margin-right: 15px;
+					}
+				}
+			}
+			.item2 {
+				@h: 33px;
+				.left {
+					line-height: @h + 2;
+				}
+				.right {
+					font-size: @fs16;
+					line-height: @h;
+					width: 155px;
+					height: @h;
+					border: 1px solid @cd3;
+					line-height: @h;
+					padding-left: 16px;
+					background-color: @cf2;
+				}
+			}
+			.item3 {
+				.right {
+					font-size: @fs16;
+					input {
+						vertical-align: middle;
+						margin-right: 6px;
+					}
+					.sec-inp {
+						margin-left: 35px;
+					}
+				}
+			}
+			.item4 {
+				@h: 35px;
+				.left {
+					line-height: @h;
+				}
+				.right {
+					line-height: @h;
+					font-size: @fs16;
+					select {
+						padding: 8px 4px;
+						width: 110px;
+						padding-left: 5px;
+						font-weight: bold;
+						border: 1px solid @cd3;
+					}
+				}
+			}
+			.item5 {
+				@h: 35px;
+				.left {
+					line-height: @h;
+				}
+				.right {
+					line-height: @h;
+					input {
+						font-size: @fs14;
+						line-height: @h;
+						width: 155px;
+						height: @h;
+						border: 1px solid @cd3;
+						line-height: @h;
+						padding-left: 16px;
+						background-color: @cf2;
+						display: inline-block;
+					}
+					a {
+						color: @c008;
+						margin-left: 15px;
+						font-size: @fs16;
+					}
+				}
+			}
+			.item6 {
+				.left {
+					height: 45px;
+				}
+			}
+		}
+		#submitBtn {
+			margin-top: 20px;
+			display: block;
+			width: 170px;
+			height: 45px;
+			font-size: @fs18;
+			line-height: 45px;
+			text-align: center;
+			color: @cff;
+			background-color: @cec6;
+			border-radius: 6px;
+		}
+	}
+}

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人中心模型</title>
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href="../css/personal/common_personal.css">
+	<link rel="stylesheet" type="text/css" href="../css/personal/my_account_topup.css"/>
+	<script src="../js/jquery-1.10.1.min.js"></script>
+	<script src="../js/header.js"></script>
+</head>
+<body>
+	<div id="header">
+		<div class="nav-wrap">
+			<div class="nav clearfix">
+				<div class="left">
+					<span>所在城市：</span>
+					<a href="./index/city.html" class="current">北京</a>
+				</div>
+				<ul class="right">
+					<li>
+						<a href="javascript:void(0);" class="item">登录</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" class="bor item">注册</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" class="bor item">我的订单</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" class="bor item">我的消息</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" class="bor item">我是商家</a>
+					</li>
+					<li>
+						<a href="tel:400-800-8820" class="phone item">400-800-8820</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="head-wrap">
+			<div class="head clearfix">
+				<div class="left">
+					<a href="javascript:void(0);">
+						<img src="../img/logo.png" alt="">
+					</a>
+				</div>
+				<div class="left search-wrap">
+					<ul class="select">
+						<li><a href="javascript:void(0);" class="shop active">商家</a></li>
+						<li><a href="javascript:void(0);"  class="goods">商品</a></li>
+					</ul>
+					<div class="search">
+						<input type="text" class="keyword" placeholder="请输入商家名称或关键字进行筛选">
+						<a href="javascript:void(0);"></a>
+					</div>
+					<ul class="hot">
+						<li>
+							<span>热门:</span>
+						</li>
+						<li class="shop-item">
+							<a href="javascript:void(0);">酒店</a>
+						</li>
+						<li class="shop-item">
+							<a href="javascript:void(0);">酒店</a>
+						</li>
+						<li class="shop-item">
+							<a href="javascript:void(0);">酒店</a>
+						</li>
+						<li class="goods-item">
+							<a href="javascript:void(0);">烤肉</a>
+						</li>
+						<li class="goods-item">
+							<a href="javascript:void(0);">烤肉</a>
+						</li>
+						<li class="goods-item">
+							<a href="javascript:void(0);">烤肉</a>
+						</li>
+					</ul>
+				</div>
+				<ul class="right clearfix">
+					<li>
+						<a href="javascript:void(0);" class="user">我的易和</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" class="cart">购物车</a>
+						<i class="amount show">0</i>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="header-nav">
+			<div class="nav clearfix">
+				<div class="classify">
+					<p>行业分类</p>
+					<div class="list-wrap">
+						<ul class="first-list">
+							<li><a href="javascript:void(0);">服装市场</a></li>
+							<li><a href="javascript:void(0);">建材装修</a></li>
+							<li><a href="javascript:void(0);">休闲娱乐</a></li>
+							<li><a href="javascript:void(0);">生活服务</a></li>
+							<li><a href="javascript:void(0);">3C市场</a></li>
+							<li><a href="javascript:void(0);">丽人</a></li>
+							<li><a href="javascript:void(0);">本地生活</a></li>
+							<li><a href="javascript:void(0);">购物</a></li>
+							<li><a href="javascript:void(0);">电子数码</a></li>
+						</ul>
+						<div class="second-list">
+							<div class="item">
+								<ul class="item-list item-list1">
+									<li><a href="javascript:void(0);">手机商家</a></li>
+									<li><a href="javascript:void(0);">电脑及配件</a></li>
+									<li><a href="javascript:void(0);">厨房电器件</a></li>
+									<li><a href="javascript:void(0);">智能生活</a></li>
+									<li><a href="javascript:void(0);">个护保健</a></li>
+									<li><a href="javascript:void(0);">显示器</a></li>
+									<li><a href="javascript:void(0);">油烟机</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<ul class="item-list item-list1">
+									<li><a href="javascript:void(0);">手机商家</a></li>
+									<li><a href="javascript:void(0);">电脑及配件</a></li>
+									<li><a href="javascript:void(0);">厨房电器件</a></li>
+									<li><a href="javascript:void(0);">智能生活</a></li>
+									<li><a href="javascript:void(0);">个护保健</a></li>
+									<li><a href="javascript:void(0);">显示器</a></li>
+									<li><a href="javascript:void(0);">油烟机</a></li>
+								</ul>
+								<ul class="item-list item-list2">
+									<li><a href="javascript:void(0);">手机商家</a></li>
+									<li><a href="javascript:void(0);">电脑及配件</a></li>
+									<li><a href="javascript:void(0);">厨房电器件</a></li>
+									<li><a href="javascript:void(0);">智能生活</a></li>
+									<li><a href="javascript:void(0);">个护保健</a></li>
+									<li><a href="javascript:void(0);">显示器</a></li>
+									<li><a href="javascript:void(0);">油烟机</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<ul class="item-list item-list1">
+									<li><a href="javascript:void(0);">手机商家</a></li>
+									<li><a href="javascript:void(0);">电脑及配件</a></li>
+									<li><a href="javascript:void(0);">厨房电器件</a></li>
+									<li><a href="javascript:void(0);">智能生活</a></li>
+									<li><a href="javascript:void(0);">个护保健</a></li>
+									<li><a href="javascript:void(0);">显示器</a></li>
+									<li><a href="javascript:void(0);">油烟机</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<ul class="item-list item-list1">
+									<li><a href="javascript:void(0);">手机商家</a></li>
+									<li><a href="javascript:void(0);">电脑及配件</a></li>
+									<li><a href="javascript:void(0);">厨房电器件</a></li>
+									<li><a href="javascript:void(0);">智能生活</a></li>
+									<li><a href="javascript:void(0);">个护保健</a></li>
+									<li><a href="javascript:void(0);">显示器</a></li>
+									<li><a href="javascript:void(0);">油烟机</a></li>
+								</ul>
+								<ul class="item-list item-list2">
+									<li><a href="javascript:void(0);">手机商家</a></li>
+									<li><a href="javascript:void(0);">电脑及配件</a></li>
+									<li><a href="javascript:void(0);">厨房电器件</a></li>
+									<li><a href="javascript:void(0);">智能生活</a></li>
+									<li><a href="javascript:void(0);">个护保健</a></li>
+									<li><a href="javascript:void(0);">显示器</a></li>
+									<li><a href="javascript:void(0);">油烟机</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<ul class="item-list item-list1">
+									<li><a href="javascript:void(0);">手机商家</a></li>
+									<li><a href="javascript:void(0);">电脑及配件</a></li>
+									<li><a href="javascript:void(0);">厨房电器件</a></li>
+									<li><a href="javascript:void(0);">智能生活</a></li>
+									<li><a href="javascript:void(0);">个护保健</a></li>
+									<li><a href="javascript:void(0);">显示器</a></li>
+									<li><a href="javascript:void(0);">油烟机</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<ul class="item-list item-list1">
+									<li><a href="javascript:void(0);">手机商家</a></li>
+									<li><a href="javascript:void(0);">电脑及配件</a></li>
+									<li><a href="javascript:void(0);">厨房电器件</a></li>
+									<li><a href="javascript:void(0);">智能生活</a></li>
+									<li><a href="javascript:void(0);">个护保健</a></li>
+									<li><a href="javascript:void(0);">显示器</a></li>
+									<li><a href="javascript:void(0);">油烟机</a></li>
+								</ul>
+								<ul class="item-list item-list2">
+									<li><a href="javascript:void(0);">手机商家</a></li>
+									<li><a href="javascript:void(0);">电脑及配件</a></li>
+									<li><a href="javascript:void(0);">厨房电器件</a></li>
+									<li><a href="javascript:void(0);">智能生活</a></li>
+									<li><a href="javascript:void(0);">个护保健</a></li>
+									<li><a href="javascript:void(0);">显示器</a></li>
+									<li><a href="javascript:void(0);">油烟机</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<ul class="item-list item-list1">
+									<li><a href="javascript:void(0);">手机商家</a></li>
+									<li><a href="javascript:void(0);">电脑及配件</a></li>
+									<li><a href="javascript:void(0);">厨房电器件</a></li>
+									<li><a href="javascript:void(0);">智能生活</a></li>
+									<li><a href="javascript:void(0);">个护保健</a></li>
+									<li><a href="javascript:void(0);">显示器</a></li>
+									<li><a href="javascript:void(0);">油烟机</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<ul class="item-list item-list1">
+									<li><a href="javascript:void(0);">手机商家</a></li>
+									<li><a href="javascript:void(0);">电脑及配件</a></li>
+									<li><a href="javascript:void(0);">厨房电器件</a></li>
+									<li><a href="javascript:void(0);">智能生活</a></li>
+									<li><a href="javascript:void(0);">个护保健</a></li>
+									<li><a href="javascript:void(0);">显示器</a></li>
+									<li><a href="javascript:void(0);">油烟机</a></li>
+								</ul>
+								<ul class="item-list item-list2">
+									<li><a href="javascript:void(0);">手机商家</a></li>
+									<li><a href="javascript:void(0);">电脑及配件</a></li>
+									<li><a href="javascript:void(0);">厨房电器件</a></li>
+									<li><a href="javascript:void(0);">智能生活</a></li>
+									<li><a href="javascript:void(0);">个护保健</a></li>
+									<li><a href="javascript:void(0);">显示器</a></li>
+									<li><a href="javascript:void(0);">油烟机</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<ul class="item-list item-list1">
+									<li><a href="javascript:void(0);">手机商家</a></li>
+									<li><a href="javascript:void(0);">电脑及配件</a></li>
+									<li><a href="javascript:void(0);">厨房电器件</a></li>
+									<li><a href="javascript:void(0);">智能生活</a></li>
+									<li><a href="javascript:void(0);">个护保健</a></li>
+									<li><a href="javascript:void(0);">显示器</a></li>
+									<li><a href="javascript:void(0);">油烟机</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<ul class="goto">
+					<li><a href="javascript:void(0);" class="active">首页</a></li>
+					<li><a href="javascript:void(0);">精选品牌</a></li>
+					<li><a href="javascript:void(0);">今日特价</a></li>
+					<li><a href="javascript:void(0);">积分商城</a></li>
+					<li><a href="javascript:void(0);">加入易和</a></li>
+				</ul>
+				<div class="help">
+					<a href="javascript:void(0);">在线客服</a>
+					<div class="help-list">
+						<a href="javascript:void(0);">QQ客服1</a>
+						<a href="javascript:void(0);">QQ客服2</a>
+						<a href="javascript:void(0);">QQ客服3</a>
+						<img src="../img/help_code.jpg" alt="">
+						<i></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="section">
+		<div class="content-wrap">
+			<!-- nav-list 左导航 -->
+			<div class="nav-list">
+				<div class="nav-header">
+					<a href="javascript:void(0);">
+						<i></i>
+						个人中心
+					</a>
+				</div>
+				<ul>
+					<li class="item-f">
+						<a href="javascript:void(0);">
+							交易管理
+							<i></i>
+						</a>
+					</li>
+					<li class="item-s active">
+						<a href="javascript:void(0);">
+							我的帐户
+						</a>
+					</li>
+					<li class="item-s">
+						<a href="javascript:void(0);">
+							我的订单
+						</a>
+					</li>
+					<li class="item-s">
+						<a href="javascript:void(0);">
+							我的积分
+						</a>
+					</li>
+					<li class="item-s">
+						<a href="javascript:void(0);">
+							我的易和券
+						</a>
+					</li>
+					<li class="item-f">
+						<a href="javascript:void(0);">
+							会员资料
+							<i></i>
+						</a>
+					</li>
+					<li class="item-s">
+						<a href="javascript:void(0);">
+							个人资料
+						</a>
+					</li>
+					<li class="item-s">
+						<a href="javascript:void(0);">
+							地址管理
+						</a>
+					</li>
+					<li class="item-s">
+						<a href="javascript:void(0);">
+							我的收藏
+						</a>
+					</li>
+					<li class="item-s">
+						<a href="javascript:void(0);">
+							最近浏览
+						</a>
+					</li>
+					<li class="item-s">
+						<a href="javascript:void(0);">
+							修改密码
+						</a>
+					</li>
+					<li class="item-f">
+						<a href="javascript:void(0);">
+							站内信
+							<i></i>
+						</a>
+					</li>
+					<li class="item-s">
+						<a href="javascript:void(0);">
+							我的消息
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 右边内容 -->
+			<ul class="my_account_wrap" style="display: inline-block;margin-left: 18px;background-color: white;">
+			<li class="my_account_wrap_header">
+				<span>账户充值</span>
+			</li>
+			<li class="my_account_wrap_content">
+				<div class="my_account_wrap_content_top">
+					<span>账户余额&nbsp;:</span><span class="account_balance">￥20.0</span>
+				</div>
+				<div class="my_account_wrap_content_bottom">
+					<span>充值金额&nbsp;:</span><input type="text" />
+				</div>
+				<a href="###" class="top_up_btn">充值</a>
+			</li>
+		</ul>
+		<ul class="topup_record" style="display: inline-block;margin-left: 18px;background-color: white;">
+			<li class="topup_record_header">
+				<span>充值记录</span>
+			</li>
+			<li class="topup_record_content">
+				<div class="topup_record_content_header">
+					<span>时间</span>
+					<span>充值订单号</span>
+					<span class="content_header_span3">充值金额</span>
+					<span>账户金额</span>
+				</div>
+				<div class="topup_record_content_mid">
+					<div>
+						<span class="topup_date">2016-04-15&nbsp;17:21:21</span>
+						<span class="order_num">2345436567126789</span>
+						<span class="topup_num">￥1000.00元</span>
+						<span class="balance_num">￥3443.00元</span>
+					</div>
+					<div>
+						<span class="topup_date">2016-04-15&nbsp;17:21:21</span>
+						<span class="order_num">2345436567126789</span>
+						<span class="topup_num">￥1000.00元</span>
+						<span class="balance_num">￥3443.00元</span>
+					</div>
+					<div>
+						<span class="topup_date">2016-04-15&nbsp;17:21:21</span>
+						<span class="order_num">2345436567126789</span>
+						<span class="topup_num">￥1000.00元</span>
+						<span class="balance_num">￥3443.00元</span>
+					</div>
+					<div>
+						<span class="topup_date">2016-04-15&nbsp;17:21:21</span>
+						<span class="order_num">2345436567126789</span>
+						<span class="topup_num">￥1000.00元</span>
+						<span class="balance_num">￥3443.00元</span>
+					</div>
+					<div>
+						<span class="topup_date">2016-04-15&nbsp;17:21:21</span>
+						<span class="order_num">2345436567126789</span>
+						<span class="topup_num">￥1000.00元</span>
+						<span class="balance_num">￥3443.00元</span>
+					</div>
+					<div>
+						<span class="topup_date">2016-04-15&nbsp;17:21:21</span>
+						<span class="order_num">2345436567126789</span>
+						<span class="topup_num">￥1000.00元</span>
+						<span class="balance_num">￥3443.00元</span>
+					</div>
+				</div>
+				<div class="select_page">
+					<a href="###"><span class="home_page">首页</span></a>
+					<span class="previous_page">上一页</span><span class="active">1</span><span>2</span><span>3</span><span>...</span><span>58</span><span>59</span><span class="next_page">下一页</span><div>共59页,</div><div>到第<input type="text" class="select_page_border"/>页</div><a href="###" class="confirm_btn">确定</a><div class="sum_page">共215条</div>
+				</div>
+			</li>
+		</ul>
+		</div>
+		
+	</div>
+	<div id="footer">
+		<div class="icon-list">
+			<ul>
+				<li class="icon-1"><a href="javascript:void(0);">正品保障</a></li>
+				<li class="icon-2"><a href="javascript:void(0);">全程追踪</a></li>
+				<li class="icon-3"><a href="javascript:void(0);">客户监督</a></li>
+				<li class="icon-4"><a href="javascript:void(0);">售后无忧</a></li>
+				<li class="icon-5"><a href="javascript:void(0);">准时送达</a></li>
+			</ul>
+		</div>
+		<div class="info">
+			<div class="logo">
+				<a href="./index.html"><img src="../img/logo.png" alt=""></a>
+			</div>
+			<div class="code">
+				<div class="wx">
+					<img src="../img/help_code.jpg" alt="">
+					<p>官方微信</p>
+				</div>
+				<div class="app">
+					<img src="../img/help_code.jpg" alt="">
+					<p>app下载</p>
+				</div>
+			</div>
+			<div class="right-list">
+				<dl>
+					<dt><h2><a href="javascript:void(0);">关于易和</a></h2></dt>
+					<dd><a href="javascript:void(0);">新用户注册</a></dd>
+					<dd><a href="javascript:void(0);">在线下单</a></dd>
+					<dd><a href="javascript:void(0);">支付方式</a></dd>
+				</dl>
+				<dl>
+					<dt><h2><a href="javascript:void(0);">配送说明</a></h2></dt>
+					<dd><a href="javascript:void(0);">运费说明</a></dd>
+					<dd><a href="javascript:void(0);">配送方式</a></dd>
+					<dd><a href="javascript:void(0);">发票说明</a></dd>
+				</dl>
+				<dl>
+					<dt><h2><a href="javascript:void(0);">售后服务</a></h2></dt>
+					<dd><a href="javascript:void(0);">退换货说明</a></dd>
+					<dd><a href="javascript:void(0);">服务保障承诺</a></dd>
+					<dd><a href="javascript:void(0);">验货与签收</a></dd>
+				</dl>
+				<dl>
+					<dt><h2><a href="javascript:void(0);">加盟易和</a></h2></dt>
+					<dd><a href="javascript:void(0);">加盟条款</a></dd>
+					<dd><a href="javascript:void(0);">公司简介</a></dd>
+					<dd><a href="javascript:void(0);">服务协议</a></dd>
+				</dl>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="copyright">
+				<span>版权所有 &copy; 2016易和生活港</span>
+				<span class="middle">保留所有权利</span>
+				<span>沪ICP备12042163</span>
+			</div>
+			<div class="txt">
+				<span>易和生活</span>
+				<span>纵享品质</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

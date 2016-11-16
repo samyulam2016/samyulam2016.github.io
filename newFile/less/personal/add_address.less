@@ -1,0 +1,117 @@
+@import "../common.less";
+
+#section {
+	.content {
+		width: 984px;
+		min-height: 544px;
+		float: right;
+		border: 1px solid @cd3;
+		background-color: @cff;
+		// overflow-y: scroll;
+		position: relative;
+
+		.title {
+			@h: 57px;
+			padding-left: 20px;
+			line-height: @h;
+			height: @h;
+			border-bottom: 1px solid @cd3;
+			color: @c008;
+			font-size: @fs18;
+		}
+		.address {
+			@h: 35px;
+			li {
+				font-size: @fs18;
+				overflow: hidden;
+				margin-top: 20px;
+				color: @c33;
+			}
+			.left, .right {
+				float: left;
+			}
+			.left {
+				line-height: @h;
+				height: @h;
+				text-align: right;
+				width: 140px;
+				span {
+					color: @cec6;
+					margin-right: 5px;
+				}
+			}
+			.right {
+				line-height: @h - 2;
+			}
+			
+			.input(@w:50px) {
+				border: 1px solid @cdc;
+				// display: block;
+				width: @w;
+				line-height: @h - 2;
+				height: @h - 2;
+				font-size: @fs16;
+				padding-left: 12px;
+			}
+
+			.item1 .right {
+				input {
+					.input(318px);
+				}
+			}
+			.item2 .right {
+				select {
+					width: 140px;
+					border: 1px solid @cdc;
+					padding: 8px 5px;
+					font-size: @fs16;
+					margin-right: 15px;
+				}
+			}
+
+			.item3 .right {
+				input {
+					.input(446px);
+				}
+			}
+			.item4 .right {
+				font-size: @fs16;
+				.mobile {
+					.input(138px);
+				}
+				.pre {
+					padding: 0;
+					.input(37px);
+					margin-right: 10px;
+				}
+				.pnum {
+					.input(113px);
+					margin-left: 10px;
+				}
+			}
+			.item5 .right {
+				font-size: @fs16;
+				// line-height: 20px;
+				input {
+					width: 16px;
+					height: 16px;
+					background-color: @cff;
+					vertical-align: text-bottom;
+					margin-right: 10px;
+				}
+				#submitBtn {
+					display: block;
+					width: 170px;
+					height: 45px;
+					line-height: 45px;
+					text-align: center;
+					font-size: @fs18;
+					color: @cff;
+					background-color: @cec6;
+					border-radius: @border_radius;
+					margin-top: 40px;
+				}
+			}
+		}
+	}
+}

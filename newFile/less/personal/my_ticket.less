@@ -1,0 +1,174 @@
+@import "../common.less";
+
+#section {
+	.content {
+		width: 984px;
+		min-height: 544px;
+		float: right;
+		border: 1px solid @cd3;
+		background-color: @cff;
+		// overflow-y: scroll;
+		position: relative;
+
+		.title {
+			@h: 57px;
+			padding-left: 20px;
+			line-height: @h;
+			height: @h;
+			border-bottom: 1px solid @cd3;
+			color: @c008;
+			font-size: @fs18;
+		}
+		.tickets {
+			padding: 20px;
+			padding-bottom: 0;
+		}
+		.ticket {
+			margin-bottom: 20px;
+			border: 1px solid @cd3;
+			.top {
+				background-color: @cf2;
+				p {
+					float: left;
+					line-height: 34px;
+					font-size: @fs14;
+					color: @c33;
+					.ellipsis;
+				}
+				.order-num {
+					width: 180px;
+					margin-left: 10px;
+					margin-right: 20px;
+				}
+				.order-date {
+					width: 230px;
+					margin-right: 100px;
+				}
+				.shop {
+					width: 180px;
+					margin-right: 50px;
+				}
+				.status {
+					width: 130px;
+					.s{
+						font-weight: bold;
+						color: @cec6;
+					}
+				}
+			}
+			
+			.middle {
+				p {
+					font-size: @fs12;
+					.ellipsis;
+				}
+			}
+			.left, .right {
+				float: left;
+			}
+			.left {width: 648px}
+			.goods {
+				height: 80px;
+				border-bottom: 1px solid @cd3;
+				> div {float: left;}
+				.info {
+					padding: 9px 0 9px 20px;
+					a {
+						display: block;
+						p {
+							display: inline-block;
+							width: 230px;
+							line-height: 62px;
+							color: @c66;
+							margin-left: 12px;
+							vertical-align: top;
+						}
+					}
+					img {
+						display: inline;
+						width: 60px;
+						height: 60px;
+						border: 1px solid @cdc;
+						vertical-align: top;
+					}
+				}
+				.type {
+					margin-top: 20px;
+					margin-left: 80px;
+					width: 100px;
+					p {
+						width: 100%;
+						color: @c99;
+						line-height: 20px;
+						height: 20px;
+					}
+				}
+				.amount {
+					margin-left: 45px;
+					margin-top: 30px;
+					p {
+						max-width: 80px;
+						line-height: 20px;
+						height: 20px;
+						color: @c66;
+					}
+				}
+			}
+			
+			.right {height: 242px; border-bottom: 1px solid @cd3;}
+			.sum, .operation {
+				float: left;
+				border-left: 1px solid @cd3;
+				height: 100%
+			}
+			.sum {
+				width: 151px;
+				div {
+					margin-top: 91px;
+					p {
+						color: @c66;
+						text-align: center;
+						width: 100%;
+						line-height: 30px;
+					}
+				}
+			}
+			.operation {
+				width: 141px;
+				div {
+					margin-top: 91px;
+					a {
+						font-size: @fs12;
+						display: block;
+						width: 73px;
+						height: 24px;
+						line-height: 24px;
+						text-align: center;
+						margin: 0 auto;
+					}
+					.details {
+						color: @c008;
+						text-decoration: underline;
+					}
+					.refund {
+						color: @cec6;
+						background-color: #ffe3d1;
+						margin-top: 12px;
+					}
+				}
+			}
+
+			.ticket-num {
+				height: 57px;
+				p {
+					padding-right: 20px;
+					line-height: 57px;
+					text-align: right;
+					font-size: @fs18;
+					color: @cec6;
+				}
+			}
+		}
+	}
+
+}

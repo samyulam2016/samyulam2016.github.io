@@ -1,0 +1,236 @@
+@contW:1180px;
+@col6:#666666;
+@orgC:#ff6d00;
+@grayC:#e5e5e5;
+@col3:#333333;
+@bgC:#ffffff;
+@cliC:747474;
+@bodyBg:#f2f2f2;
+@fontsize:16px;
+@borderC:#d3d3d3;
+@radius:4px;
+@import "../common.less";
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: @bodyBg;
+}
+input,textarea{
+    outline: none;
+}
+
+#content{
+    width:@contW;
+//  height: 200px;
+    margin: 0 auto;
+    background-color: @bodyBg;
+    font-size: @fs16;
+    .location{
+        width:100%;
+        height: 54px;
+        text-align: left;
+        font-size: @fontsize;
+        color:@col6;
+        line-height: 54px;
+
+        .join_us{
+            color:@orgC;
+            text-decoration: none;
+        }
+    }
+    .single_info{
+        padding-left: 80px;
+        background-color: @bgC;
+        width:1098px;
+         padding-bottom: 40px;
+        border:1px solid @borderC;
+        padding-top: 80px;
+        .tips_info{
+            overflow: hidden;
+            margin-bottom: 60px;
+//          -webkit-user-select: none;
+            span{
+                float: left;
+                display: block;
+                width:214px;
+//              padding-right: 42px;
+                height:42px;
+                background-color: ;
+                text-align: center;
+                line-height: 42px;
+                text-decoration: none;
+                color:@col3;
+                background-color: @grayC;
+            }
+            .show{
+                background-color: @orgC;
+                color: @bodyBg;
+            }
+           .left2{
+               width:276px;
+           }
+           .left2:before{
+               content:"";
+               display: block;
+               float: left;
+               width:31px;
+               height: 42px;
+               background:url(../../img/icons.png) -256px -144px;
+           }
+           .left2:after{
+               content:"";
+               display: block;
+               float: right;
+               width:31px;
+               height: 42px;
+               background:url(../../img/icons.png) -256px -220px;
+           }
+
+        }
+
+        .complete_details{
+            color:@col3;
+            .give_tips{
+                margin-bottom: 40px;
+                color:@col6;
+            }
+            .star{
+//                  line-height: 36px;
+//                  height: 36px;
+                    color:@orgC;
+                    margin-right: 8px;
+                }
+            .agent_type{
+                height: 36px;
+                width:100%;
+                line-height: 36px;
+                overflow: hidden;
+                margin-bottom: 40px;
+                .left_details{
+                    float: left;
+                    width:118px;
+                }
+                .warning{
+                    display: none;
+                    color:#C81623;
+                }
+                input,span{
+                   display: block;
+                   float: left;
+                   line-height: 36px;
+                   height: 36px;
+                }
+                input{
+                    height: 14px;
+                    line-height: 14px;
+                    padding: 10px;
+                    width:368px;
+                    border:1px solid @borderC;
+                   -webkit-tag-highlight-color:transparent;
+                }
+//              .left_in{
+//                  margin-left: 16px;
+//              }
+
+            }
+            .agent_type1{
+                line-height: 16px;
+                margin-bottom: 40px;
+                .radio{
+                    margin-left: 36px;
+                    margin-right: 10px;
+                }
+
+            }
+            .agent_info{
+                height: 132px;
+                span,textarea{
+                    display: block;
+                    float: left;
+
+                }
+                 .remark{
+                    display: block;
+                    width:368px;
+                    padding: 10px;
+                    resize: none;
+
+                    border:1px solid @borderC;
+                    height: 110px;
+                }
+            }
+            .agent_detail{
+                overflow: hidden;
+                >div{
+                    float: left;
+                }
+                .img_detail{
+                    width:118px;
+                    text-align: left;
+          
+                }
+                .deliver_image{
+                    overflow: hidden;
+                    p{
+                        color: @col6;
+                        font-size: 14px;
+                        margin-bottom: 10px;
+                    }
+                    .upload_img{
+                        .agent_face{
+                           display: block;
+                           float: left;
+
+                           color:@bgC;
+                           width:140px;
+                           height: 140px;
+                           background:url(../../img/icons.png) -368px -398px no-repeat;
+                           background-color: #e4e4e4;
+                           position: relative;
+                           margin-right: 20px;
+                           margin-bottom: 30px;
+                           overflow: hidden;
+                           img{
+                               width:100%;
+                               height: 100%;
+                           }
+                           span{
+                               position: absolute;
+                               display: block;
+                               height: 30px;
+                               width: 100%;
+                               background:url(../../img/icontips.png) repeat;
+                               bottom: 0;
+                               text-align: center;
+                               line-height: 30px;
+                           }
+                        }
+
+                    }
+                }
+
+            }
+        }
+        .regist{
+            display: inline;
+            *zoom:0;
+            display: inline-block;
+            width:170px;
+            height: 44px;
+            background-color: @orgC;
+            border-radius:@radius;
+            text-align: center;
+            line-height: 44px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color:@bgC;
+            margin-left: 118px;
+        }
+        .files{
+            display: none;
+        }
+    }
+}
