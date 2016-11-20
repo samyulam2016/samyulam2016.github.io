@@ -1,0 +1,274 @@
+header {
+        width: 100%;
+        height: 39px;
+        background: #f29004;
+        color: white;
+        font-size: 1.7rem;
+        line-height: 39px;
+        position: relative;
+        li {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        li:nth-child(1){
+            width: 2.93%;
+            height: 18px;
+            left: 3.6%;
+            background: url(../active/left.png) no-repeat;         
+        }
+        li:nth-child(2){  
+            width: 21.3%;         
+            left: 50%;
+            right: 50%;
+            margin-left: -10.65%;
+            text-align: center;
+        }        
+ }
+ section{
+     width: 100%;
+     .person_details{
+         width: 100%;
+         font-size: 1.3rem;
+         color: #000;
+         background: #fff;
+         padding-top: 13px;
+         position: relative;
+         .person_details_header{
+             width: 100%;             
+             .person_name{
+                 float: left;
+                 margin-left: 3.6%;
+             }
+             .person_phone{
+                 float: left;
+                 margin-left: 4%;
+             }
+         }
+         .person_details_footer{
+             width: 100%;
+             margin-top: 20px;
+             padding-bottom: 19px;
+             .address_select{
+                 color: #f6b26d;
+                 margin-left: 3.6%;
+             }
+             .address{
+                 margin-left: 2.1%;
+             }
+         }
+         .right_icon{
+             width: 12px;
+             height: 20px;
+             background: url(../active/right_icon.png) no-repeat;
+             background-size: 100% 100%;
+             position: absolute;
+             right: 2.6%;
+             top: 0;
+             bottom: 0;
+             margin: auto;
+         }       
+     }
+     .person_details:after{
+         content: "";
+         display: block;
+         width: 100%;
+         height: 10px;
+         background: #F2F2F2;
+     }
+     .mui-table-view-cell{
+         color: #959595;
+     }
+     .goods_title{
+         font-size: 1.4rem;
+         color: black;
+     }
+     .goods_size{
+         font-size: 1rem;
+         color: #c6c6c6;
+     }
+     .goods_num{
+         position: absolute;
+         font-size: 1.1rem;
+         color: #c6c6c6;
+         right: 2.6%;
+         bottom: 14px;
+     }
+     .mui-table-view-cell:after{
+         left: 12px;
+         right: 12px;        
+     }
+     .carriage{
+         font-size: 1.3rem;
+         span:first-child{
+             float: left;
+         }
+         .carriage_price{
+             float: right;
+         }
+     }
+     .remarks_list:before{
+         left: 12px;
+         right: 12px;
+     }
+     .transition{
+         width: 100%;
+         height: 9px;
+         background: #f2f2f2;
+     }
+     .mui-media-object.my_wallet{
+         width: 33px;
+         height: 33px;
+         background: url(../active/pay_icon.png) no-repeat;
+         background-size: 354.5px 30.5px;
+         background-position: -113px 0;
+     }    
+     .wallet,.Ailpay,.weixin_pay{
+         font-size: 1.4rem;
+         color: black;
+         line-height: 35px;
+     }
+     .select_icon{
+         position: absolute;
+         width: 19px;
+         height: 19px;
+         background: url(../active/select_icon.png) no-repeat;
+         background-size: 40px 17px;
+         background-position: -22px 0;
+         right: 2.6%;
+         top: 18px;
+     }
+     .select_icon.active{
+         background-position: 0 0;
+     }
+     .mui-media-object.my_Ailpay{
+         width: 33px;
+         height: 33px;
+         background: url(../active/pay_icon.png) no-repeat;
+         background-size: 354.5px 30.5px;
+         background-position: 2px 0px;
+     }
+     .mui-media-object.my_weixin{
+         width: 33px;
+         height: 33px;
+         background: url(../active/pay_icon.png) no-repeat;
+         background-size: 354.5px 30.5px;
+         background-position: -53px 0;
+     }
+ }
+ footer{
+     width: 100%;
+     height: 55px;
+     margin-top: 35px;
+     background: #fff;
+     .footer_left{
+         float: left;
+         margin-top: 18px;
+         margin-left: 3%;
+         span:first-child{
+             font-size: 1.5rem;
+         }
+         .sum{
+             color: red;
+             font-size: 1.5rem;
+         }
+     }
+     .footer_right{
+         width: 34.26%;
+         height: 35px;
+         background: #ee4147;
+         line-height: 35px;
+         text-align: center;
+         float: right;
+         color: #fff;
+         border-radius: 5px;
+         margin-top: 10px;
+         margin-right: 2.6%;
+         cursor: pointer;
+     }
+     
+ }
+.import_password{
+    width: 88.4%;
+    height: 241px;
+    background: #fff;
+    position: fixed;
+    left: 6%;
+    top: 150px;
+//  top: 0;
+//  left: 0;
+//  bottom: 0;
+//  right: 0;
+//  margin: auto;
+    z-index: 1000;
+    text-align: center;
+    border-radius: 8px;
+    display: none;
+    div:first-child{
+        font-size: 1.6rem;
+        margin-top: 14px;
+    }
+    div:first-child:after{
+        content: "";
+        display: block;
+        margin: auto;
+        width: 96%;
+        height: 1px;
+        background: #dbdbdb;
+        margin-top: 10px;
+    }
+    .sum_price{
+        font-size: 2rem;
+        margin-top: 18px;
+        margin-left: -4%;//这样就不会变形了
+    }
+    .password_frame{
+        width: 91.84%;
+        height: 47px;
+        margin: auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-top: 20px;
+        li{
+            width: 16.66666%;
+            height: 45px;
+            float: left;
+            border-right: 1px solid #bfbfbf;
+            background: #f2f2f2;
+//          border-radius: 1px;
+        }
+        li:last-child{
+            border-right: none;
+        }      
+    }
+    .pay_btn{
+        margin-top: 23px;
+        .cancel_pay{
+            width: 37.1%;
+            height: 39px;
+            background: #f2f2f2;
+            font-size: 1.5rem;
+            text-align: center;
+            line-height: 39px;
+            border-radius: 5px;
+            border: 1px solid #bfbfbf;
+            float: left;
+            margin-left: 4.2%;
+        }
+        .confirm_pay{
+            width: 37.1%;
+            height: 39px;
+            background: #f29004;
+            font-size: 1.5rem;
+            text-align: center;
+            line-height: 39px;
+            border-radius: 5px;
+            border: 1px solid #bfbfbf;
+            float: right;
+            margin-right: 4.2%;
+            color: #fff;
+        }
+    }
+}

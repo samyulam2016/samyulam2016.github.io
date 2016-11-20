@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			header{
+				height: 500px;
+				border: 10px solid;
+			}
+			.popBtn{
+				display: block;
+				width: 92%;
+				margin: 0 auto;
+				height: 44px;
+				color: #fff;
+				text-align: center;
+				text-decoration: none;
+				line-height: 44px;
+				border-radius: 4px;
+				background-color: hsl(268,100%,50%);
+			}
+			#mask{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+				background-color: rgba(0,0,0,0.5);
+				/*display: none;*/
+			}
+			#mask .pop-box{
+				position: absolute;
+				left: 5%;
+				width: 90%;
+				height: 300px;
+				border-radius: 4px;
+				overflow: hidden;
+				background-color: red;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+			}
+			#mask .pop-box textarea{
+				display: block;
+				width: 100%;
+				margin-top: 20px;
+				outline: none;
+				resize: none;
+				padding: 5%;
+				height: 160px;
+			}
+			#mask .pop-box h2{
+				text-align: center;
+				height: 44px;
+				line-height: 44px;
+				color: #fff;
+				background-color: blue;
+				font-weight: bold;
+				overflow: hidden;
+			}
+			footer{
+				height: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<header></header>
+		<a href="###" class="popBtn">弹窗出来</a>
+		<div id="mask">
+			<div class="pop-box">
+				<h2>弹窗表单</h2>
+				<textarea></textarea>
+			</div>
+		</div>
+		<footer></footer>
+	</body>
+	<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			function stopEvent(e){
+				e.preventDefault();
+			}
+			$(".popBtn").on("click",function(){
+				$("#mask").show();
+				$(document).on("touchmove",stopEvent);
+			})
+			
+			$("#mask").on("click",function(){
+				$(this).hide();
+				$(document).off("touchmove");
+			})
+			$(".pop-box").on('click',function(e){
+				e.stopPropagation();//阻止事件传播
+			})
+		})
+	</script>
+</html>

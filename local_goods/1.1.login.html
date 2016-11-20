@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/1.login.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div id="wrap">
+			<ul class="header">
+				<a href="10.my_home_page.html"><li>&nbsp;</li></a>
+				<li>登录</li>
+				<a href="1.3.register.html" class="register">注册</a>
+			</ul>
+			<ul class="login_section">
+				<li>
+					<img src="img/home_logo.png" />
+				</li>
+				<li>
+					<div class="icon_u"></div>
+					<input type="text" id="userName" placeholder="请输入账号/手机号"/>
+				</li>
+				<li>
+					<div class="icon_p"></div>
+					<input type="text" id="passWord" placeholder="请输入密码"/>
+				</li>
+				<div class="clearfix">
+					<a href="1.2.forgetPassword.html"><div class="tips">忘记密码?</div></a>
+				</div>
+				<li class="login_bt">登录</li>
+			</ul>				
+		</div>
+	</body>
+	<script type="text/javascript">
+		var sorts = document.querySelectorAll("footer a");
+		function change_sort(){
+			var before = 0;
+			for(var i = 0; i < sorts.length; i++){
+	sorts[i].index = i;			sorts[i].addEventListener("touchstart",function(){
+				sorts[before].className = "";
+				this.className = "active";
+				before = this.index;
+				})
+			}
+		}
+		change_sort();
+	</script>
+</html>

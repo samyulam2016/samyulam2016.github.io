@@ -1,0 +1,97 @@
+@c66: #666666;
+@c33: #333333;
+@c99: #999999;
+@cd3: #d3d3d3;
+@ce2: #e2e2e2;
+@cee: #eeeeee;
+@cea0: #ea0000;
+@cec6: #ec6a17;
+@cdc: #dcdcdc;
+@c6a: #6a6a6a;
+@cf2: #f2f2f2;
+@cff6: #ff6c00;
+@cff: #fff;
+@c008: #008de1;
+@border_radius: 4px;
+
+@fs10: 10px;
+@fs12: 12px;
+@fs14: 14px;
+@fs16: 16px;
+@fs18: 18px;
+@fs20: 20px;
+@fs22: 22px;
+@fs24: 24px;
+@fs28: 28px;
+@fs30: 30px;
+@fs36: 36px;
+@fs48: 48px;
+
+@minW: 1180px;
+
+.btn {
+	background-color: @cec6;
+	color: @cff;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.ellipsis {
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+// 大图滚动
+.pic_slider {
+    overflow: hidden;
+    // border-top: 2px solid #008de1;
+    // border-bottom: 2px solid #008de1;
+    position: relative;
+    .pic_inner {
+        position: relative;
+        left: 0;
+        top: 0;
+        // width: 9999px;
+        width: 100%;
+        height: 470px;
+        a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .paganation {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-user-select: none;
+        span {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            background-color: #323333;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+        span.active {
+            background-color: #ec6a17;
+            color: #fff;
+        }
+    }
+}

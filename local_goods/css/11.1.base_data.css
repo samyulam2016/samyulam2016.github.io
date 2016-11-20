@@ -1,0 +1,154 @@
+body {
+  background-color: #f2f2f2;
+}
+header {
+  width: 100%;
+  height: 39px;
+  background: #f29004;
+  color: white;
+  font-size: 1.7rem;
+  line-height: 39px;
+  position: relative;
+}
+header div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+header div:nth-child(1) {
+  width: 2.93%;
+  height: 18px;
+  left: 3.6%;
+  background: url(../active/left.png) no-repeat;
+}
+header div:nth-child(2) {
+  width: 21.3%;
+  left: 50%;
+  right: 50%;
+  margin-left: -10.65%;
+  text-align: center;
+}
+section {
+  font-size: 1.5rem;
+}
+section a {
+  color: #838383;
+}
+section .head_portrait {
+  display: block;
+  width: 100%;
+  height: 75px;
+  line-height: 75px;
+  border-bottom: 1px solid #cccccc;
+  position: relative;
+  background: #fff;
+}
+section .head_portrait span:first-child {
+  margin-left: 10px;
+}
+section .head_portrait img {
+  width: 57px;
+  height: 57px;
+  position: absolute;
+  right: 29px;
+  top: 9px;
+}
+section .head_portrait span:last-child {
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  background: url(../active/right_icon.png) no-repeat;
+  background-size: 50% 50%;
+  background-position: 0 5px;
+  top: 50%;
+  margin-top: -10px;
+  right: 8px;
+}
+section .nick_name,
+section .vip_logo,
+section .phone,
+section .change_password,
+section .change_wallet_password,
+section .apply {
+  display: block;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  position: relative;
+  border-bottom: 1px solid #cccccc;
+  background: #fff;
+}
+section .nick_name span,
+section .vip_logo span,
+section .phone span,
+section .change_password span,
+section .change_wallet_password span,
+section .apply span {
+  display: inline-block;
+}
+section .nick_name span:first-child,
+section .vip_logo span:first-child,
+section .phone span:first-child,
+section .change_password span:first-child,
+section .change_wallet_password span:first-child,
+section .apply span:first-child {
+  margin-left: 10px;
+}
+section .nick_name .name,
+section .vip_logo .name,
+section .phone .name,
+section .change_password .name,
+section .change_wallet_password .name,
+section .apply .name {
+  position: absolute;
+  right: 25px;
+}
+section .nick_name span:last-child,
+section .vip_logo span:last-child,
+section .phone span:last-child,
+section .change_password span:last-child,
+section .change_wallet_password span:last-child,
+section .apply span:last-child {
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  background: url(../active/right_icon.png) no-repeat;
+  background-size: 50% 50%;
+  background-position: 0 5px;
+  top: 50%;
+  margin-top: -10px;
+  right: 8px;
+}
+section .vip_logo span:first-child {
+  margin-left: 10px;
+}
+section .vip_logo span:last-child {
+  position: absolute;
+  width: 21px;
+  height: 16.5px;
+  background: url(../active/icon.png) no-repeat;
+  background-size: 216px 226px;
+  background-position: -2px -5px;
+  right: 25px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+section .phone_num {
+  position: absolute;
+  right: 25px;
+}
+section .phone:after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 10px;
+  background: #f2f2f2;
+  border-top: 1px solid #ccc;
+}
+section .change_password {
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=11.1.base_data.css.map */

@@ -1,0 +1,148 @@
+header {
+  width: 100%;
+  height: 39px;
+  background: #f29004;
+  color: white;
+  font-size: 1.6rem;
+  line-height: 39px;
+  position: relative;
+}
+header div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+header div:nth-child(1) {
+  width: 2.93%;
+  height: 18px;
+  left: 3.6%;
+  background: url(../active/left.png) no-repeat;
+}
+header div:nth-child(2) {
+  width: 40%;
+  left: 50%;
+  right: 50%;
+  margin-left: -20%;
+  text-align: center;
+}
+section {
+  width: 100%;
+}
+section .section_header {
+  width: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+  height: 45px;
+  background: #fff;
+  line-height: 45px;
+  position: relative;
+  padding: 0 10px;
+}
+section .section_header li {
+  width: 20%;
+  float: left;
+}
+section .section_header .slider {
+  width: 19%;
+  height: 2px;
+  background: #f29004;
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+}
+section .section_header:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 12px;
+  background: #f2f2f2;
+  visibility: visible;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+section .mui-wrap {
+  width: 100%;
+  margin-top: 12px;
+}
+section .mui-table-view-cell.goods_wrap img {
+  max-width: 69px;
+  height: 69px;
+}
+section .mui-table-view-cell.goods_wrap .goods_title {
+  font-size: 1.3rem;
+}
+section .mui-table-view-cell.goods_wrap .goods_num_list {
+  font-size: 1.4rem;
+  position: absolute;
+  right: 15px;
+  top: 57px;
+}
+section .mui-table-view-cell.goods_wrap .goods_price {
+  color: #de0000;
+  margin-top: 16px;
+}
+section .mui-table-view-cell:after {
+  visibility: visible;
+  right: 15px;
+}
+section .order_mui_top {
+  height: 37px;
+  font-size: 1.25rem;
+  position: relative;
+}
+section .order_mui_top span {
+  position: absolute;
+}
+section .order_mui_top span:first-child {
+  left: 15px;
+}
+section .order_mui_top .order_num {
+  left: 80px;
+}
+section .order_mui_top .order_state {
+  right: 15px;
+  color: #f29004;
+}
+section .order_mui_bottom {
+  font-size: 1.3rem;
+  height: 43px;
+  line-height: 25px;
+  position: relative;
+  color: #666666;
+}
+section .order_mui_bottom button {
+  width: 84px;
+  height: 30px;
+  position: absolute;
+  top: 6.5px;
+}
+section .order_mui_bottom button:nth-of-type(1) {
+  right: 110px;
+}
+section .order_mui_bottom button:nth-of-type(2) {
+  border: 1px solid #f29004;
+  color: #f29004;
+  right: 20px;
+}
+section .wait_send {
+  display: none;
+}
+section .wait_get {
+  display: none;
+}
+section .wait_get .order_mui_bottom .confirm_get {
+  border: 1px solid #f29004;
+  color: #f29004;
+  right: 20px;
+}
+section .finish {
+  display: none;
+}
+section .return_goods {
+  display: none;
+}
+section .return_goods .order_mui_bottom .delete_goods {
+  right: 20px;
+}
+/*# sourceMappingURL=10.my_order.css.map */

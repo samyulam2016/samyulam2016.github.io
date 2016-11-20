@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>		
+		<link rel="stylesheet" type="text/css" href="css/10.my_order.css"/>
+	</head>
+	<body>
+		<header>
+			<a href="10.my_home_page.html"><div>&nbsp;</div></a>
+			<div class="forget_txt">我的订单</div>
+		</header>
+		<section>
+			<ul class="section_header clearfix">
+				<li>待付款</li>
+				<li>待发货</li>
+				<li>待收货</li>
+				<li>已完成</li>
+				<li>退货/售后</li>
+				<div class="slider"></div>
+			</ul>
+			<ul class="mui-table-view mui-wrap wait_pay">	
+			<li class="mui-table-view-cell order_mui_top">
+				<span>订单编号:</span>
+				<span class="order_num">SHYJ12552</span>
+				<span class="order_state">待付款</span>
+			</li>
+			<li class="mui-table-view-cell mui-media goods_wrap">
+				<a href="javascript:;">
+					<img class="pic_introduce mui-media-object mui-pull-left" src="img/songshu_food1.png">
+					<div class="mui-media-body">
+						<span class="goods_title">坚果特产山核桃奶油味碧跟...</span>
+						
+						<div class="goods_num_list">
+							<span class="x">x</span>					
+							<span class="goods_num">2</span>							
+						</div>
+						<p class="goods_price">￥<span class="prices">29.5</span></p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell order_mui_bottom">
+				<span>
+					共<span class="goods_num">x</span>件
+				</span>
+				<span>
+					合计: 
+					<span class="goods_sum_price">￥13</span>
+				</span>
+				<button>取消订单</button>
+				<button>立即支付</button>
+			</li>
+		</ul>
+		<ul class="mui-table-view mui-wrap wait_send">	
+			<li class="mui-table-view-cell order_mui_top">
+				<span>订单编号:</span>
+				<span class="order_num">SHYJ12552</span>
+				<span class="order_state">待发货</span>
+			</li>
+			<li class="mui-table-view-cell mui-media goods_wrap">
+				<a href="javascript:;">
+					<img class="pic_introduce mui-media-object mui-pull-left" src="img/songshu_food1.png">
+					<div class="mui-media-body">
+						<span class="goods_title">坚果特产山核桃奶油味碧跟...</span>
+						
+						<div class="goods_num_list">
+							<span class="x">x</span>					
+							<span class="goods_num">2</span>							
+						</div>
+						<p class="goods_price">￥<span class="prices">29.5</span></p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell order_mui_bottom">
+				<span>
+					共<span class="goods_num">x</span>件
+				</span>
+				<span>
+					合计: 
+					<span class="goods_sum_price">￥13</span>
+				</span>
+			</li>
+		</ul>
+		<ul class="mui-table-view mui-wrap wait_get">	
+			<li class="mui-table-view-cell order_mui_top">
+				<span>订单编号:</span>
+				<span class="order_num">SHYJ12552</span>
+				<span class="order_state">待收货</span>
+			</li>
+			<li class="mui-table-view-cell mui-media goods_wrap">
+				<a href="javascript:;">
+					<img class="pic_introduce mui-media-object mui-pull-left" src="img/songshu_food1.png">
+					<div class="mui-media-body">
+						<span class="goods_title">坚果特产山核桃奶油味碧跟...</span>
+						
+						<div class="goods_num_list">
+							<span class="x">x</span>					
+							<span class="goods_num">2</span>							
+						</div>
+						<p class="goods_price">￥<span class="prices">29.5</span></p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell order_mui_bottom">
+				<span>
+					共<span class="goods_num">x</span>件
+				</span>
+				<span>
+					合计: 
+					<span class="goods_sum_price">￥13</span>
+				</span>
+				<button class="confirm_get">确认收货</button>
+			</li>
+		</ul>
+		<ul class="mui-table-view mui-wrap finish">	
+			<li class="mui-table-view-cell order_mui_top">
+				<span>订单编号:</span>
+				<span class="order_num">SHYJ12552</span>
+				<span class="order_state">待评价</span>
+			</li>
+			<li class="mui-table-view-cell mui-media goods_wrap">
+				<a href="javascript:;">
+					<img class="pic_introduce mui-media-object mui-pull-left" src="img/songshu_food1.png">
+					<div class="mui-media-body">
+						<span class="goods_title">坚果特产山核桃奶油味碧跟...</span>
+						
+						<div class="goods_num_list">
+							<span class="x">x</span>					
+							<span class="goods_num">2</span>							
+						</div>
+						<p class="goods_price">￥<span class="prices">29.5</span></p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell order_mui_bottom">
+				<span>
+					共<span class="goods_num">x</span>件
+				</span>
+				<span>
+					合计: 
+					<span class="goods_sum_price">￥13</span>
+				</span>
+				<button>删除</button>
+				<button>去评价</button>
+			</li>
+		</ul>
+		<ul class="mui-table-view mui-wrap return_goods">	
+			<li class="mui-table-view-cell order_mui_top">
+				<span>订单编号:</span>
+				<span class="order_num">SHYJ12552</span>
+				<span class="order_state">退货中</span>
+			</li>
+			<li class="mui-table-view-cell mui-media goods_wrap">
+				<a href="javascript:;">
+					<img class="pic_introduce mui-media-object mui-pull-left" src="img/songshu_food1.png">
+					<div class="mui-media-body">
+						<span class="goods_title">坚果特产山核桃奶油味碧跟...</span>
+						
+						<div class="goods_num_list">
+							<span class="x">x</span>					
+							<span class="goods_num">2</span>							
+						</div>
+						<p class="goods_price">￥<span class="prices">29.5</span></p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell order_mui_bottom">
+				<span>
+					共<span class="goods_num">x</span>件
+				</span>
+				<span>
+					合计: 
+					<span class="goods_sum_price">￥13</span>
+				</span>
+				<button class="delete_goods">删除</button>
+			</li>
+		</ul>
+		</section>
+	</body>
+	<script type="text/javascript" src="js/mui.min.js"></script>
+	<script type="text/javascript">
+		mui.init();
+	</script>
+	<script type="text/javascript" src="js/9.my_order.js"></script>
+</html>

@@ -1,0 +1,314 @@
+.btn {
+  background-color: #ec6a17;
+  color: #ffffff;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pic_slider {
+  overflow: hidden;
+  position: relative;
+}
+.pic_slider .pic_inner {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 470px;
+}
+.pic_slider .pic_inner a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.pic_slider .pic_inner a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.pic_slider .paganation {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  -webkit-user-select: none;
+}
+.pic_slider .paganation span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  background-color: #323333;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.pic_slider .paganation span.active {
+  background-color: #ec6a17;
+  color: #fff;
+}
+body {
+  background-color: #f2f2f2;
+}
+#section .content-wrap {
+  width: 1180px;
+  margin: 0 auto;
+  padding-top: 20px;
+  overflow: hidden;
+}
+#section .nav-list {
+  width: 173px;
+  background-color: #ffffff;
+  border: 1px solid #d3d3d3;
+  float: left;
+}
+#section .nav-list a {
+  display: block;
+  color: #666666;
+}
+#section .nav-list .nav-header {
+  border-bottom: 1px solid #d3d3d3;
+}
+#section .nav-list .nav-header a {
+  height: 57px;
+  line-height: 57px;
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+}
+#section .nav-list .nav-header i {
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 18px;
+  top: 19.5px;
+  left: 22px;
+  background: url(../../img/icons.png) no-repeat;
+  background-position: 0 -20px;
+}
+#section .nav-list ul {
+  margin-top: 12px;
+}
+#section .nav-list ul li a {
+  padding: 0 20px;
+}
+#section .nav-list ul .item-f a {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 38px;
+  position: relative;
+}
+#section .nav-list ul .item-f a i {
+  position: absolute;
+  width: 6px;
+  height: 11px;
+  background: url(../../img/icons.png) no-repeat;
+  background-position: 0 -463px;
+  right: 20px;
+  top: 12px;
+}
+#section .nav-list ul .item-s a {
+  font-size: 14px;
+  line-height: 36px;
+}
+#section .nav-list ul .item-s:hover a {
+  color: #ec6a17;
+}
+#section .nav-list ul .item-s.active a {
+  color: #ec6a17;
+  text-decoration: underline;
+}
+.submit {
+  display: block;
+  width: 170px;
+  height: 45px;
+  background: #EC6A17;
+  font-size: 18px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 40px;
+}
+#phone_tips {
+  font-size: 14px;
+}
+.bind_phone_wrap {
+  width: 985px;
+  height: 546px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  float: right;
+}
+.bind_phone_wrap .bind_phone_wrap_header {
+  height: 57px;
+  line-height: 57px;
+  border-bottom: 1px solid #ccc;
+}
+.bind_phone_wrap .bind_phone_wrap_header span {
+  color: #008DE1;
+  font-size: 17px;
+  margin-left: 20px;
+}
+.bind_phone_wrap .bind_phone_wrap_content {
+  padding: 40px;
+}
+.bind_phone_wrap .bind_phone_wrap_content .bind_phone_wrap_content_top span {
+  display: block;
+  float: left;
+  font-size: 17px;
+  line-height: 44px;
+  text-align: center;
+  width: 238px;
+  height: 44px;
+  background: url(../../img/bind_phone_progress.png) no-repeat;
+}
+.bind_phone_wrap .bind_phone_wrap_content .bind_phone_wrap_content_top .span1_top {
+  width: 238px;
+  background-position: 3px 0;
+}
+.bind_phone_wrap .bind_phone_wrap_content .bind_phone_wrap_content_top .span1_top.active {
+  color: #fff;
+  background-position: 3px -203px;
+}
+.bind_phone_wrap .bind_phone_wrap_content .bind_phone_wrap_content_top .span2_top {
+  width: 246px;
+  background-position: 0 -66px;
+}
+.bind_phone_wrap .bind_phone_wrap_content .bind_phone_wrap_content_top .span2_top.active {
+  color: #fff;
+  background-position: 0 -260px;
+}
+.bind_phone_wrap .bind_phone_wrap_content .bind_phone_wrap_content_top .span3_top {
+  width: 243px;
+  background-position: 0 -136px;
+}
+.bind_phone_wrap .bind_phone_wrap_content .bind_phone_wrap_content_top .span3_top.active {
+  color: #fff;
+  background-position: 0 -320px;
+}
+.bind_phone_wrap .change {
+  padding: 40px 40px 0;
+}
+.bind_phone_wrap .change input {
+  border: none;
+  padding: 12px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+}
+.bind_phone_wrap .change input.active {
+  background-color: #ffffff;
+}
+.bind_phone_wrap .change > label {
+  display: block;
+  width: 305px;
+  border: 1px solid #d3d3d3;
+  margin-bottom: 30px;
+  position: relative;
+}
+.bind_phone_wrap .change > label input {
+  width: 281px;
+}
+.bind_phone_wrap .change > label .tips {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 16px;
+  color: #999999;
+  padding: 12px;
+  line-height: 18px;
+  -webkit-user-select: none;
+}
+.bind_phone_wrap .change .phoneNum input {
+  color: #333333;
+}
+.bind_phone_wrap .change .check-code {
+  overflow: hidden;
+  border: none;
+}
+.bind_phone_wrap .change .check-code input {
+  display: inline;
+  width: 87px;
+  border: 1px solid #d3d3d3;
+}
+.bind_phone_wrap .change .check-code img {
+  display: inline;
+  width: 80px;
+  height: 34px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.bind_phone_wrap .change .check-code .change-code {
+  float: right;
+  display: block;
+  font-size: 14px;
+  color: #ec6a17;
+  line-height: 44px;
+}
+.bind_phone_wrap .change .phone-code {
+  position: relative;
+}
+.bind_phone_wrap .change .phone-code input {
+  width: 185px;
+  padding-right: 108px;
+}
+.bind_phone_wrap .change .phone-code .getCode {
+  position: absolute;
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 32px;
+  width: 100px;
+  height: 32px;
+  background-color: #008de1;
+  right: 5px;
+  top: 5px;
+}
+.bind_phone_wrap .change #submitBtn {
+  display: block;
+  width: 170px;
+  height: 45px;
+  background-color: #ec6a17;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 4px;
+}
+.bind_phone_wrap .success_revise {
+  margin-top: 130px;
+  line-height: 42px;
+  display: none;
+}
+.bind_phone_wrap .success_revise i {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background: url(../../img/icons.png) no-repeat;
+  background-position: -263px -358px;
+  vertical-align: middle;
+  margin-top: -10px;
+  margin-left: 255px;
+}
+.bind_phone_wrap .success_revise span {
+  font-size: 24px;
+  color: #EC6A17;
+  margin-left: 20px;
+}
+.bind_phone_wrap .success_revise.active {
+  display: block;
+}

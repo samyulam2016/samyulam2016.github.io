@@ -1,0 +1,396 @@
+header {
+        width: 100%;
+        height: 39px;
+        background: #f29004;
+        color: white;
+        font-size: 1.7rem;
+        line-height: 39px;
+        position: relative;
+        li {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        li:nth-child(1){
+            width: 2.93%;
+            height: 18px;
+            left: 3.6%;
+            background: url(../active/left.png) no-repeat;         
+        }
+        li:nth-child(2){  
+            width: 21.3%;         
+            left: 50%;
+            right: 50%;
+            margin-left: -10.65%;
+            text-align: center;
+        }        
+ }
+ section{
+     width: 100%;
+     .person_details{
+         width: 100%;
+         font-size: 1.3rem;
+         color: #000;
+         background: #fff;
+         padding-top: 13px;
+         position: relative;
+         .person_details_header{
+             width: 100%;             
+             .person_name{
+                 float: left;
+                 margin-left: 3.6%;
+             }
+             .person_phone{
+                 float: left;
+                 margin-left: 4%;
+             }
+         }
+         .person_details_footer{
+             width: 100%;
+             margin-top: 20px;
+             padding-bottom: 19px;
+             .address_select{
+                 color: #f6b26d;
+                 margin-left: 3.6%;
+             }
+             .address{
+                 margin-left: 3.6%;
+             }
+         }
+         .right_icon{
+             width: 12px;
+             height: 20px;
+             background: url(../active/right_icon.png) no-repeat;
+             background-size: 50% 50%;
+             position: absolute;
+             right: 2.6%;
+             top: 0;
+             bottom: 0;
+             margin: auto;
+         }       
+     }
+     .wait_getGoods{
+         position: absolute;
+         right: 15px;
+     }
+     .return_g_btn{
+         position: absolute;
+         width: 70px;
+         height: 24px;
+         border: 1px solid #ccc;
+         text-align: center;
+         line-height: 24px;
+         border-radius: 5px;
+         right: 57px;
+         top: 8px;
+//       display: none;
+     }
+     .person_details:after{
+         content: "";
+         display: block;
+         width: 100%;
+         height: 10px;
+         background: #F2F2F2;
+     }
+     .mui-table-view-cell{
+         color: #959595;
+     }
+     .goods_title{
+         font-size: 1.4rem;
+         color: black;
+     }
+     .goods_size{
+         font-size: 1rem;
+         color: #c6c6c6;
+     }
+     .goods_num{
+         position: absolute;
+         font-size: 1.1rem;
+         color: #c6c6c6;
+         right: 2.6%;
+         bottom: 14px;
+     }
+     .mui-table-view-cell:after{
+         left: 12px;
+         right: 12px;        
+     }
+     .carriage{
+         font-size: 1.3rem;
+         span:first-child{
+             float: left;
+         }
+         .carriage_price{
+             float: right;
+         }
+     }
+     .remarks_list:before{
+         left: 12px;
+         right: 12px;
+     }
+     .transition{
+         width: 100%;
+         height: 9px;
+         background: #f2f2f2;
+     }
+     .mui-media-object.my_wallet{
+         width: 33px;
+         height: 33px;
+         background: url(../active/pay_icon.png) no-repeat;
+         background-size: 354.5px 30.5px;
+         background-position: -113px 0;
+     }    
+     .wallet,.Ailpay,.weixin_pay{
+         font-size: 1.4rem;
+         color: black;
+         line-height: 35px;
+     }
+     .select_icon{
+         position: absolute;
+         width: 19px;
+         height: 19px;
+         background: url(../active/select_icon.png) no-repeat;
+         background-size: 40px 17px;
+         background-position: -22px 0;
+         right: 2.6%;
+         top: 18px;
+     }
+     .select_icon.active{
+         background-position: 0 0;
+     }
+     .mui-media-object.my_Ailpay{
+         width: 33px;
+         height: 33px;
+         background: url(../active/pay_icon.png) no-repeat;
+         background-size: 354.5px 30.5px;
+         background-position: 2px 0px;
+     }
+     .mui-media-object.my_weixin{
+         width: 33px;
+         height: 33px;
+         background: url(../active/pay_icon.png) no-repeat;
+         background-size: 354.5px 30.5px;
+         background-position: -53px 0;
+     }
+     .order_messages{
+         padding: 0 15px;
+         background: #fff;
+         font-size: 1.2rem;
+         color: #000000;
+         height: 189px;
+         div{
+             margin-top: 8px;
+         }
+        .message{
+             width: 100%;
+             height: 37px;
+             line-height: 37px;
+             font-size: 1.3rem;
+             color: #959595;
+             border-bottom: 1px solid #ccc;
+             margin-bottom: 15px;
+             margin-top: 0;
+         }        
+     }
+ }
+ footer{
+     width: 100%;
+     height: 80px;
+     background: #f2f2f2;
+     text-align: center;
+     button{
+         width: 85.33%;
+         height: 45px;
+         background: #f29004;
+         color: #fff;
+         margin-top: 20px;
+         font-size: 1.6rem;
+         border-radius: 10px;
+     }
+ }
+ 
+ .return_goods_message{
+     width: 90.03%;
+     height: 400px;
+     background: #fff;
+     margin: auto;
+     position: absolute;
+     left: 0;
+     right: 0;
+     margin: auto;
+     top: 72px;
+     z-index: 99999;
+     display: none;
+     .return_goods_message_header{
+         background: #f2f2f2;
+         height: 30px;
+         line-height: 30px;
+         position: relative;
+         .mui-icon-closeempty{
+             top: 3px;
+         }
+         span:nth-child(1){
+             font-size: 1.5rem;
+             margin-left: 15px;
+             color: #666666;
+         }
+         span:last-child{
+             position: absolute;
+             right: 15px;
+         }
+     }
+      .return_reason_content{
+         width: 80.5%;
+         border: 1px solid #ccc;
+         position: absolute;
+         right: 0;
+         left: -27px;
+         top: 26px;
+         margin: auto;
+         padding-left: 2.5px;
+         background: #fff;
+         display: none;
+             li{                              
+                 height: 23px;
+                 font-size: 1rem;
+             }
+             li:first-child{
+                 margin-top: 10px;
+             }
+         }
+     .return_goods_reason{
+         height: 36px;
+         line-height: 36px;
+         font-size: 1.3rem;
+         padding: 0 10px;
+         margin-top: 10px;
+         position: relative;
+         .return_goods_reason_left{
+             float: left;
+             span{
+                 color: indianred
+             }
+         }
+         .return_goods_reason_mid{
+             width: 130px;
+             height: 28px;
+             line-height: 26px;
+             border: 1px solid #ccc;
+             float: left;
+             margin-left: 8px;
+             position: relative;
+             padding-left: 5px;
+             margin-top: 3px;
+             font-size: 1rem;
+             div{
+                 width: 27px;
+                 height: 26px;
+                 border-left: 1px solid #ccc;
+                 position: absolute;
+                 right: 0px;
+                 top: 0px;
+                 background: #f2f2f2;
+                 text-align: center;
+                 span{
+                     display: inline-block;
+                     width: 13.5px;
+                     height: 7.5px;
+                     background: url(../active/bottom_icon.png) no-repeat;
+                     background-size: 13.5px 7.5px;
+                 }
+             }
+         }
+         .return_goods_reason_right{
+             font-size: 1rem;
+             color: #666666;
+             span{
+                 color: indianred;
+             }
+         }
+         .return_goods_reason_right{
+             float: right;
+         }         
+     }
+     .return_money{
+         padding: 0 10px;
+         font-size: 1.3rem;
+         margin-top: 10px;
+         height: 36px;
+         line-height: 36px;
+         span{
+             color: indianred;
+         }
+         input{
+             width: 131px;
+             height: 27px;
+             margin-left: 8px;
+             padding-left: 10px;
+         }
+     }
+     .return_explain{
+         padding: 0 10px;
+         font-size: 1.3rem;
+         height: 43px;
+         line-height: 43px;
+         margin-top: 10px;
+         #return_explain_txt{
+             width: 64%;
+             height: 43px;
+             vertical-align: middle;
+             margin-left: 6px;
+             padding-left: 10px;
+         }
+     }
+     .upload_evidence{
+         height: 27px;
+         font-size: 1.3rem;
+         line-height: 25px;
+         margin-top: 10px;
+         padding: 0 10px;
+         span{
+             display: inline-block;
+             width: 110px;
+             height: 25px;
+             background: #f2f2f2;
+             text-align: center;
+             font-size: 1.1rem;
+             margin-left: 7px;
+             border: 1px solid #ccc;
+             input{
+                 display: none;
+             }
+         }
+     }
+     .upload_explain{
+         width: 183px;
+         height: 29px;
+         margin-top: 10px;
+         margin-left: 83px;
+         font-size: 1rem;
+         color: #666666;
+     }
+     .upload_pic{
+         padding: 0 10px;
+         margin-top: 10px;
+         img{
+             width: 66px;
+             height: 66px;
+             display: inline-block;
+             margin-left: 10px;
+         }
+         img:first-child{
+             margin-left: 0;
+         }
+     }
+     button{
+         width: 78.5px;
+         margin-left: 10px;
+         margin-top: 10px;
+         color: #fff;
+         text-align: center;
+         font-size: 1.4rem;
+         background: #f29525;
+         border-radius: 5px;
+     }
+    
+ }

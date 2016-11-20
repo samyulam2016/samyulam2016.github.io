@@ -1,0 +1,60 @@
+2016-10-20 
+Day-01
+1.老老实实自己弄雪碧图，发现也很好弄的；
+2.在PSD那里弄下来的雪碧图，在backgroundSize那里要设置图片的一半，这样就雪碧图就不会变形了
+3.复习一下swiper
+
+2016-10-21
+Day-02
+1.遇到问题，没有是插件和百度解决不了的，如果有，就问明海
+2.利用tween的原理写js原生动画
+3.复习一下GASP
+
+2016-10-22
+Day-03
+1.如果把一块东西分成紧密的几块(例如33%),在父级那里加box-sizing:border-box;
+2.而手机屏幕的物理尺寸，和像素尺寸是不成比例的。最典型的例子，iPhone 3gs的屏幕像素是320x480，iPhone 4s的屏幕像素是640x960，像素密度，也就是PPI（pixels per inch）,主流手机屏幕大小最小320
+
+2016-10-29
+1.清除默认样式
+input,select,button [替换元素： 样式是由浏览器自己决定的]
+-webkit-appearance: none; 
+2.去掉高亮
+-webkit-tap-highlight-color: yourcolor/transparent(去除高亮)
+
+3.设计: 居中（水平、竖直）
+大标题， button文字会加粗;
+间隙 ， 不要太挤
+
+4.使用百分比,块元素默认100%（不用设置）; 当块在同一行显示的时候，要设置width,以防加起来的宽度>100%,导致换行;
+
+5.定宽不定高，高度由内容来撑开,(列表的标题限制长度，图片后台处理最好都要大小一致)，可以设置最小高度（宽度）/最大高度（视情况而定）
+
+6.box-sizing: border-box (padding 和 border 包含在宽度里面)
+
+7.按钮可以使用a标签，a:active{}(手指点下去没有松开的时候) link,visited,hover,active
+因为button有默认样式
+
+8.使用a标签包裹img的时候，出现空隙的时候,
+img{display:block};
+input,textarea 会出现一点北京颜色
+input,textarea{display: block};
+
+9.城市选择用select标签，它会自动获取手机自带的select样式
+
+10.绝对定位的时候，left,top设置百分比,在某些浏览器可能会出现问题，如果遇到，改回px
+
+11.字体大小不要出现.5，需要整数;
+
+12.单行省略：
+demo1 li{
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;		  
+	overflow: hidden;
+	white-space: nowrap;
+	width:250px;
+	margin-left:12px;
+	list-style:disc inside none;	
+}
+
+

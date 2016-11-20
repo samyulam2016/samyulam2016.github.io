@@ -1,0 +1,83 @@
+@import "../common.less";
+body {
+	background-color: @cf2;
+}
+#section {
+	.content-wrap {
+		width: @minW;
+		margin: 0 auto;
+		padding-top: 20px;
+		overflow: hidden;
+	}
+	.nav-list {
+		width: 173px;
+		background-color: @cff;
+		border: 1px solid @cd3;
+		float: left;
+		// margin-right: 20px;
+		
+		a {
+			display: block;
+			color: @c66;
+		}
+
+		.nav-header {
+			border-bottom: 1px solid @cd3;
+			@h: 57px;
+			a {
+				height: @h;
+				line-height: @h;
+				text-align: center;
+				font-size: @fs18;
+				position: relative;
+			}
+			i {
+				position: absolute;
+				display: inline-block;
+				vertical-align: middle;
+				width: 15px;
+				height: 18px;
+				top: (@h - 18) / 2;
+				left: 22px;
+				background: url(../../img/icons.png) no-repeat;
+				background-position: 0 -20px;
+			}
+		}
+
+		ul {
+			margin-top: 12px;
+			li a {
+				padding: 0 20px;
+			}
+
+			@lh: 22px;
+			.item-f a {
+				font-weight: bold;
+				font-size: @fs16;
+				line-height: (16 + @lh);
+				position: relative;
+
+				i {
+					position: absolute;
+					width: 6px;
+					height: 11px;
+					background: url(../../img/icons.png) no-repeat;
+					background-position: 0 -463px;
+					right: 20px;
+					top: 12px;
+				}
+			}
+			.item-s a{
+				font-size: @fs14;
+				line-height: (14 + @lh);
+			}
+			.item-s:hover a{
+				color: @cec6;
+			}
+			.item-s.active a {
+				color: @cec6;
+				text-decoration: underline;
+			}
+		}
+	}
+}

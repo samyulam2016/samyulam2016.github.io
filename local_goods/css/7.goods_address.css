@@ -1,0 +1,155 @@
+body {
+  background-color: #f2f2f2;
+}
+header {
+  width: 100%;
+  height: 39px;
+  background: #f29004;
+  color: white;
+  font-size: 1.7rem;
+  line-height: 39px;
+  position: relative;
+}
+header .title {
+  width: 30%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+header div:first-child {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 2.93%;
+  height: 18px;
+  left: 3.6%;
+  background: url(../active/left.png) no-repeat;
+}
+header .edit {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 2.6%;
+}
+section {
+  width: 100%;
+  margin-top: 12px;
+}
+section .custom_name,
+section .custom_phone,
+section .custom_street {
+  width: 97.4%;
+  height: 45px;
+  border: none;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  font-size: 1.4rem;
+  padding-left: 2.6%;
+}
+section .custom_phone {
+  border-top: none;
+}
+section .select_city_gd {
+  width: 100%;
+  height: 45px;
+  font-size: 1.4rem;
+  line-height: 45px;
+  background: #fff;
+  border-bottom: 1px solid #dbdbdb;
+  color: #4d4d4d;
+}
+section .select_city_gd span {
+  display: inline-block;
+}
+section .select_city_gd span:nth-of-type(1) {
+  margin-left: 2.6%;
+}
+section .select_city_gd #province,
+section .select_city_gd .shi,
+section .select_city_gd .area {
+  border: none;
+  font-size: 1.5rem;
+  -webkit-appearance: none;
+  background-color: #fff;
+  margin-left: 7.5%;
+  position: relative;
+  top: 0.5px;
+}
+section .select_city_gd .shi {
+  margin-left: 1.5%;
+}
+section .select_city_gd .area {
+  margin-left: 1.5%;
+}
+section .select_city_gd span:nth-of-type(3),
+section .select_city_gd span:nth-of-type(5),
+section .select_city_gd span:nth-of-type(7) {
+  width: 20px;
+  height: 14px;
+  background: url(../active/goods_address_icon.png) no-repeat;
+  background-size: 30px 7px;
+  background-position: -13px 5px;
+}
+section .custom_street {
+  border-top: none;
+}
+section .default_address {
+  width: 100%;
+  height: 45px;
+  font-size: 1.4rem;
+  line-height: 45px;
+  background: #fff;
+  border-bottom: 1px solid #dbdbdb;
+  color: #4d4d4d;
+}
+section .default_address h3 {
+  margin-left: 2.6%;
+  float: left;
+}
+section .default_address .default_address_btn {
+  width: 50px;
+  height: 28px;
+  background: #C6C6C6;
+  float: right;
+  border-radius: 13px;
+  margin-right: 2.6%;
+  margin-top: 10px;
+  position: relative;
+}
+section .default_address .default_address_btn .default_roll_btn {
+  width: 26px;
+  height: 26px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 1px;
+}
+.select_address {
+  position: relative;
+  width: 100%;
+  height: 262px;
+}
+.select_address .select_address_header {
+  width: 100%;
+  height: 45px;
+  background: #ccc;
+  font-size: 1.6rem;
+  color: #4d4d4d;
+  line-height: 45px;
+}
+.select_address .select_address_header span:nth-of-type(1) {
+  display: block;
+  float: left;
+  margin-left: 2.6%;
+}
+.select_address .select_address_header span:nth-of-type(2) {
+  display: block;
+  float: right;
+  margin-right: 2.6%;
+}
+/*# sourceMappingURL=7.goods_address.css.map */

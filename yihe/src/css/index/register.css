@@ -1,0 +1,154 @@
+input{
+	border: none;
+}
+#footer {
+	margin-top: 0;
+}
+.floatRight{
+	float: right;
+}
+.floatLeft{
+	float: left;
+}
+.wrap .content .input-mes .tipsicon{
+	display:none;
+	width: 16px;
+	height: 18px;
+	background: url("../../img/icons.png")no-repeat -250px -53px;	
+}
+.wrap{
+	width: 100%;
+	background-color: #008de1;
+	padding: 0 38px;
+}
+.wrap .content{
+	width: 1017px;
+	position: relative;
+	margin: 0 auto;
+	padding: 40px 40px 40px 124px; 
+}
+.wrap .content .bg-img{
+	width: 462px;
+	display: inline-block;
+	vertical-align: top;
+	position: absolute;
+	bottom: -2px;left: 124px;
+}
+.wrap .content .input-mes{
+	background-color: white;
+	width: 309px;
+	display: inline-block;
+	padding: 30px 40px 23px 40px;
+}
+.wrap .content .input-mes .input-phoneNum{
+	border: 1px solid #d3d3d3;
+	padding: 13px;
+	position: relative;
+}
+.wrap .content .input-mes .ieTips{
+	position: absolute;
+	left: 13px;
+	top: 12px;
+	font-size: 16px;
+	z-index: 1;
+	color: #cccccc;
+}
+.wrap .content .input-mes .input-phoneNum input{
+	font-size: 16px;
+	width: 92%;
+}
+.wrap .content .input-mes .warning-tips{
+	margin: 6px 0;
+	font-size: 12px;
+	color: #db2630;
+	visibility: hidden;	
+}
+.wrap .content .input-mes .warning-tips:before{
+	content: "";
+	width: 14px;height: 18px;
+	display: inline-block;
+	background: url("../../img/icons.png")no-repeat -252px -94px;
+	vertical-align: bottom;
+	margin-right: 3px;
+}
+.wrap .content .input-mes .input-password,.again-password{
+	border: 1px solid #d3d3d3;
+	padding: 13px;
+	position: relative;
+}
+.wrap .content .input-mes .input-password input{
+	font-size: 16px;
+	width: 92%;
+}
+.wrap .content .input-mes .again-password {
+}
+.wrap .content .input-mes .again-password input{
+	font-size: 16px;
+	width: 92%;
+}
+.wrap .content .input-mes .input-code{
+	margin-bottom: 30px;
+	position: relative;
+}
+.wrap .content .input-mes .input-code input{
+	width: 85px;
+	font-size: 16px;
+	padding: 13px;
+	border: 1px solid #d3d3d3;
+	vertical-align: middle;
+}
+.wrap .content .input-mes .input-code .code-img{
+	display: inline-block;
+	background: url("../../img/active/login-code.png") no-repeat;
+	background-size: 100% 100%;
+	width: 79px;height: 36px;
+	vertical-align: middle;
+	margin: 0 10px 0 14px;
+}
+.wrap .content .input-mes .input-code .change-code{
+	font-size: 14px;
+	color: #f1976e;
+}
+.wrap .content .input-mes .button{
+	padding: 0 25px;
+	margin-bottom: 20px;
+}
+.wrap .content .input-mes .button a{
+	display: inline-block;
+	font-size: 18px;
+	width: 100px;
+	height: 45px;
+	color: white;
+	text-align: center;
+	line-height: 45px;
+	border-radius: 3px;
+}
+.wrap .content .input-mes .button .loginBtn{
+	background-color: #ec6a17;
+}
+.wrap .content .input-mes .button .registerBtn{
+	background-color: #008de1;
+}
+
+.wrap .content .input-mes .get-code{
+	border: 1px solid #d3d3d3;
+	padding: 5px 0 5px 13px;
+	font-size: 16px;
+	position: relative;
+	margin-bottom: 33px;
+}
+.wrap .content .input-mes .get-code .ieTips{
+	top: 11px;
+}
+.wrap .content .input-mes .get-code input{
+	font-size: 16px;
+	width: 62%;
+}
+.wrap .content .input-mes .get-code .get-code-btn{
+	display: inline-block;
+	width: 100px;
+	height: 33px;
+	text-align: center;
+	line-height: 33px;
+	background-color: #008de1;
+}

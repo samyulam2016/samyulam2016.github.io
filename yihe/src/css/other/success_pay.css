@@ -1,0 +1,245 @@
+.btn {
+  background-color: #ec6a17;
+  color: #ffffff;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pic_slider {
+  overflow: hidden;
+  position: relative;
+}
+.pic_slider .pic_inner {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 470px;
+}
+.pic_slider .pic_inner a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.pic_slider .pic_inner a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.pic_slider .paganation {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  -webkit-user-select: none;
+}
+.pic_slider .paganation span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  background-color: #323333;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.pic_slider .paganation span.active {
+  background-color: #ec6a17;
+  color: #fff;
+}
+#header {
+  min-width: 1180px;
+}
+#header .nav-wrap {
+  width: 100%;
+  background-color: #eeeeee;
+}
+#header .nav-wrap .nav {
+  width: 1180px;
+  margin: 0 auto;
+}
+#header .nav-wrap .nav .left {
+  float: left;
+}
+#header .nav-wrap .nav .left .current:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 6px;
+  background: url(../../img/icons.png) no-repeat;
+  background-position: 0 0;
+  margin-left: 5px;
+}
+#header .nav-wrap .nav .right {
+  float: right;
+  overflow: hidden;
+}
+#header .nav-wrap .nav .right li {
+  float: left;
+}
+#header .nav-wrap .nav .right .item {
+  margin-left: 17px;
+}
+#header .nav-wrap .nav .right .item:hover {
+  color: #C81623;
+}
+#header .nav-wrap .nav .phone:before {
+  content: "";
+  display: inline-block;
+  width: 11px;
+  height: 15px;
+  background: url(../../img/icons.png) no-repeat;
+  background-position: -1px -55px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+#header .nav-wrap .nav .bor {
+  padding-right: 17px;
+}
+#header .nav-wrap .nav span,
+#header .nav-wrap .nav a {
+  font-size: 12px;
+  color: #666666;
+  line-height: 34px;
+}
+#footer {
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 1px solid #d3d3d3;
+}
+#footer .bottom {
+  width: 720px;
+  text-align: center;
+  margin: 0 auto;
+}
+#footer .bottom span {
+  font-size: 14px;
+  color: #999999;
+}
+#footer .bottom .middle {
+  margin: 0 12px 0 15px;
+  border-right: 1px solid #999999;
+  padding-right: 12px;
+}
+#footer .bottom .txt {
+  margin-top: 12px;
+}
+#footer .bottom .txt span {
+  color: #008de1;
+  margin: 0 8px;
+}
+.submit {
+  display: block;
+  width: 170px;
+  height: 45px;
+  background: #EC6A17;
+  font-size: 18px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 40px;
+}
+.pay_topup_wrap {
+  width: 1180px;
+  border: 1px solid #ccc;
+  padding: 40px 40px 60px;
+  font-size: 16px;
+  margin: auto;
+  margin-top: 25px;
+}
+.pay_topup_wrap .pay_top_wrap_header {
+  height: 82px;
+  line-height: 82px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.pay_topup_wrap .pay_top_wrap_header .yihe_logo {
+  display: block;
+  float: left;
+  width: 144px;
+  height: 82px;
+  background: url(../../img/logo.png) no-repeat;
+}
+.pay_topup_wrap .pay_top_wrap_header .pay_top_wrap_header_content_right {
+  float: right;
+  margin-top: 39px;
+}
+.pay_topup_wrap .pay_top_wrap_header .pay_top_wrap_header_content_right span {
+  display: block;
+  float: left;
+  font-size: 18px;
+  line-height: 44px;
+  text-align: center;
+  width: 238px;
+  height: 44px;
+  background: url(../../img/bind_phone_progress.png) no-repeat;
+}
+.pay_topup_wrap .pay_top_wrap_header .pay_top_wrap_header_content_right span.purchase {
+  width: 238px;
+  background-position: 3px 0;
+}
+.pay_topup_wrap .pay_top_wrap_header .pay_top_wrap_header_content_right span.purchase.active {
+  color: #fff;
+  background-position: 3px -203px;
+}
+.pay_topup_wrap .pay_top_wrap_header .pay_top_wrap_header_content_right span.purchase1 {
+  width: 246px;
+  background-position: 0 -66px;
+}
+.pay_topup_wrap .pay_top_wrap_header .pay_top_wrap_header_content_right span.purchase1.active {
+  color: #fff;
+  background-position: 0 -260px;
+}
+.pay_topup_wrap .pay_top_wrap_header .pay_top_wrap_header_content_right span.purchase2 {
+  width: 243px;
+  background-position: 0 -136px;
+}
+.pay_topup_wrap .pay_top_wrap_header .pay_top_wrap_header_content_right span.purchase2.active {
+  color: #fff;
+  background-position: 0 -320px;
+}
+.pay_topup_wrap .succeed_submit_tips {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.pay_topup_wrap .succeed_submit_tips div.firstchild {
+  width: 88px;
+  height: 85px;
+  background: url(../../img/success_icon.png) no-repeat;
+  margin: 80px auto 40px;
+}
+.pay_topup_wrap .succeed_submit_tips div.lastchild {
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+.pay_topup_wrap .succeed_submit_tips a {
+  display: block;
+  width: 170px;
+  height: 45px;
+  background: #EC6A17;
+  font-size: 18px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 40px;
+  margin: auto;
+}
+.pay_topup_wrap .succeed_submit_tips .order_num {
+  margin-top: 53px;
+}

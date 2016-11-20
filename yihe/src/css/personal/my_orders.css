@@ -1,0 +1,371 @@
+.btn {
+  background-color: #ec6a17;
+  color: #ffffff;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pic_slider {
+  overflow: hidden;
+  position: relative;
+}
+.pic_slider .pic_inner {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 470px;
+}
+.pic_slider .pic_inner a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.pic_slider .pic_inner a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.pic_slider .paganation {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  -webkit-user-select: none;
+}
+.pic_slider .paganation span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  background-color: #323333;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.pic_slider .paganation span.active {
+  background-color: #ec6a17;
+  color: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f2f2f2;
+}
+input,
+textarea {
+  outline: none;
+}
+.clearfix {
+  content: "";
+  display: block;
+  clear: both;
+}
+#section {
+  width: 1180px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
+#section .content-wrap {
+  width: 1180px;
+  margin: 0 auto;
+  padding-top: 20px;
+  overflow: hidden;
+}
+#section .nav-list {
+  width: 173px;
+  background-color: #ffffff;
+  border: 1px solid #d3d3d3;
+  float: left;
+}
+#section .nav-list a {
+  display: block;
+  color: #666666;
+}
+#section .nav-list .nav-header {
+  border-bottom: 1px solid #d3d3d3;
+}
+#section .nav-list .nav-header a {
+  height: 57px;
+  line-height: 57px;
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+}
+#section .nav-list .nav-header i {
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 18px;
+  top: 19.5px;
+  left: 22px;
+  background: url(../../img/icons.png) no-repeat;
+  background-position: 0 -20px;
+}
+#section .nav-list ul {
+  margin-top: 12px;
+}
+#section .nav-list ul li a {
+  padding: 0 20px;
+}
+#section .nav-list ul .item-f a {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 38px;
+  position: relative;
+}
+#section .nav-list ul .item-f a i {
+  position: absolute;
+  width: 6px;
+  height: 11px;
+  background: url(../../img/icons.png) no-repeat;
+  background-position: 0 -463px;
+  right: 20px;
+  top: 12px;
+}
+#section .nav-list ul .item-s a {
+  font-size: 14px;
+  line-height: 36px;
+}
+#section .nav-list ul .item-s:hover a {
+  color: #ec6a17;
+}
+#section .nav-list ul .item-s.active a {
+  color: #ec6a17;
+  text-decoration: underline;
+}
+#section .right_orders {
+  float: left;
+  width: 982px;
+  margin-left: 20px;
+  border: 1px solid #d3d3d3;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+#section .right_orders h1 {
+  height: 57px;
+  color: #008de1;
+  line-height: 59px;
+  padding-left: 20px;
+  border-bottom: 1px solid #d3d3d3;
+}
+#section .right_orders .nav {
+  height: 60px;
+}
+#section .right_orders .nav li {
+  float: left;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 0 32px;
+  text-align: center;
+  height: 18px;
+  line-height: 18px;
+  border-left: 2px solid #666666;
+  margin: 21px 0;
+}
+#section .right_orders .nav li a {
+  color: #666666;
+}
+#section .right_orders .nav li .show {
+  background-color: #ffe3d1;
+}
+#section .right_orders .nav li a:hover {
+  color: #ff6c00;
+}
+#section .right_orders .nav .first_all {
+  margin: 0;
+  border: none;
+}
+#section .right_orders .nav .first_all a {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 60px;
+  height: 30px;
+  margin: 15px auto;
+  line-height: 30px;
+}
+#section .right_orders .give_order {
+  margin: 0 20px 20px;
+  border: 1px solid #d3d3d3;
+  color: #333333;
+  overflow: hidden;
+  font-size: 12px;
+}
+#section .right_orders .give_order .tips_top {
+  background-color: #f2f2f2;
+  height: 34px;
+  line-height: 34px;
+  color: #333333;
+  font-size: 14px;
+}
+#section .right_orders .give_order .tips_top .order_tp {
+  padding-left: 10px;
+  margin-right: 44px;
+}
+#section .right_orders .give_order .tips_top .ocean_home {
+  margin: 0 126px 0 140px;
+}
+#section .right_orders .give_order .tips_top .order_status a {
+  color: #ff6c00;
+}
+#section .right_orders .give_order .order_content .list_giving {
+  float: left;
+  color: #666666;
+}
+#section .right_orders .give_order .order_content .list_giving1 {
+  width: 650px;
+}
+#section .right_orders .give_order .order_content .list_giving1 .ticket_buy {
+  min-height: 82px;
+  border-bottom: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d3;
+}
+#section .right_orders .give_order .order_content .list_giving1 .ticket_buy img {
+  float: left;
+  width: 60px;
+  border: 1px solid #d3d3d3;
+  margin: 10px 20px;
+}
+#section .right_orders .give_order .order_content .list_giving1 .ticket_buy span {
+  float: left;
+}
+#section .right_orders .give_order .order_content .list_giving1 .ticket_buy span.b_left1 {
+  line-height: 81px;
+}
+#section .right_orders .give_order .order_content .list_giving1 .ticket_buy span.b_left2 {
+  width: 100px;
+  margin-left: 82px;
+  margin-right: 74px;
+  padding-top: 20px;
+  text-align: center;
+  color: #999999;
+}
+#section .right_orders .give_order .order_content .list_giving1 .ticket_buy span.b_left3 {
+  line-height: 81px;
+}
+#section .right_orders .give_order .order_content .list_giving1 .ticket_buy.last {
+  border-bottom: none;
+}
+#section .right_orders .give_order .order_content .list_giving2 {
+  width: 152px;
+  height: 150px;
+  padding-top: 94px;
+  border-right: 1px solid #d3d3d3;
+  text-align: center;
+}
+#section .right_orders .give_order .order_content .list_giving3 {
+  width: 137px;
+  height: 244px;
+  text-align: center;
+  position: relative;
+}
+#section .right_orders .give_order .order_content .list_giving3 .change a {
+  display: block;
+  overflow: hidden;
+  width: 75px;
+  color: #666666;
+  background-color: #ffe3d1;
+  margin: 0 auto;
+}
+#section .right_orders .give_order .order_content .list_giving3 .change a:nth-of-type(1) {
+  color: #008de1;
+  background-color: transparent;
+}
+#section .right_orders .give_order .order_content .list_giving3 .change a:nth-of-type(2) {
+  margin: 16px auto;
+}
+#section .right_orders .give_order .order_content .list_giving3 .change .active {
+  text-decoration: underline;
+}
+#section .right_orders .give_order .order_content .list_giving3 .change .active1 {
+  color: #ff6c00;
+}
+#section .right_orders .bottom_listcl {
+  margin: 40px  0 40px 60px;
+  font-size: 14px;
+}
+#section .right_orders .bottom_listcl > li {
+  float: left;
+  width: 36px;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #d3d3d3;
+  border-left: none;
+  text-align: center;
+}
+#section .right_orders .bottom_listcl > li a {
+  display: block;
+  color: #666666;
+}
+#section .right_orders .bottom_listcl > li a:hover {
+  background-color: #008de1;
+  color: #ffffff;
+}
+#section .right_orders .bottom_listcl .index_page {
+  width: 60px;
+  margin-right: 20px;
+}
+#section .right_orders .bottom_listcl .index_page a {
+  color: #008de1;
+  font-size: 16px;
+}
+#section .right_orders .bottom_listcl .showIn {
+  background-color: #008de1;
+}
+#section .right_orders .bottom_listcl .showIn a {
+  color: #ffffff;
+}
+#section .right_orders .bottom_listcl .prev,
+#section .right_orders .bottom_listcl .next,
+#section .right_orders .bottom_listcl .decide {
+  width: 90px;
+  font-size: 16px;
+  overflow: hidden;
+}
+#section .right_orders .bottom_listcl .clleft {
+  border-left: 1px solid #d3d3d3;
+}
+#section .right_orders .bottom_listcl .decide {
+  border: none;
+  border-radius: 4px;
+  background-color: #008de1;
+}
+#section .right_orders .bottom_listcl .decide a {
+  color: #ffffff;
+}
+#section .right_orders .bottom_listcl .omit {
+  width: 30px;
+  border: none;
+}
+#section .right_orders .bottom_listcl .listgiving1 {
+  border: none;
+  width: 216px;
+  height: 32px;
+  color: #666666;
+}
+#section .right_orders .bottom_listcl .listgiving1 input {
+  text-align: center;
+  width: 48px;
+  height: 30px;
+}
+#section .right_orders .bottom_listcl .summary_page {
+  width: 60px;
+  font-size: 14px;
+  border: none;
+}

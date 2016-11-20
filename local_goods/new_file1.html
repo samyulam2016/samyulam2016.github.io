@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		label{
+			display: block;
+		}
+		/*checked: 选中*/
+		.input-group .input:checked + .icon{
+			color: red;
+		}
+		
+	</style>
+	<body>
+		<label class="input-group" for="heihei">
+			
+			<input type="checkbox" name="gender" class="input" id="heihei"/>
+			<span class="icon">xxx</span>
+		</label>
+	</body>
+	<script type="text/javascript">
+		var input1 = document.getElementsByName("gender")[0];
+		console.log(input1);
+		//这样就可以检测check的状态
+		console.log(input1.checked);
+		
+	</script>
+</html>

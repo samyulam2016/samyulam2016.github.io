@@ -1,0 +1,123 @@
+@import "../common.less";
+body {
+	background-color: @cf2;
+}
+/***** section *****/
+#section {
+	background-color: @cf2;
+
+	.section-wrap {
+		width: @minW;
+		margin: 0 auto;
+	}
+
+	.sec-nav {
+		@h: 54px;
+		height: @h;
+		line-height: @h;
+		font-size: @fs14;
+		color: @c66;
+		text-align: left;
+		a {
+			color: @c66;
+		}
+		span {
+			color: @cec6;
+		}
+	}
+
+	.city-wrap {
+		@border: 1px solid @cdc;
+		@h: 45px;
+		background-color: @cff;
+		border: @border;
+
+		.city {
+			li {
+				height: @h;
+				line-height: @h;
+				font-size: @fs16;
+				border-bottom: @border;
+				padding-left: 20px;
+				span {
+					color: @c66;
+				}
+				span.sp {
+					color: @cec6;
+				}
+				a {
+					color: @c66;
+					margin-right: 30px;
+				}
+				a.active, a:hover {
+					color: @cec6;
+				}
+			}
+		}
+
+		.tips {
+			color: @cff;
+			background-color: @c008;
+			width: 143px;
+			height: 34px;
+			text-align: center;
+			line-height: 34px;
+			border-radius: @border_radius;
+			margin: 15px 0 23px 20px;
+			position: relative;
+			font-size: @fs14;
+
+			i {
+				position: absolute;
+				width: 0;
+				height: 0;
+				border: 10px solid transparent;
+				border-top-color: @c008;
+				bottom: -16px;
+				left: 28px;
+			}
+		}
+
+		.city-list {
+			padding: 0 20px;
+			li {
+				margin-bottom: 30px;
+				overflow: hidden;
+				> * {
+					display: block;
+					float: left;
+				}
+
+				@h: 44px;
+				.type {
+					margin-right: 20px;
+					width: 53px;
+					height: @h;
+					line-height: @h;
+					text-align: center;
+					font-size: @fs24;
+					color: @c33;
+					border: @border;
+				}
+				a {
+					color: @c33;
+					font-size: @fs16;
+					line-height: 32px;
+					margin-right: 28px;
+				}
+				a:hover {
+					color: @cec6;
+				}
+			}
+			li:hover {
+				background-color: @cf2;
+			}
+			li:hover .type {
+				background-color: @c008;
+				border-color: @c008;
+				color: @cff;
+			}
+		}
+	}
+}
+/***** section *****/

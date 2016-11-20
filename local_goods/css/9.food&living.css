@@ -1,0 +1,102 @@
+.active {
+  background: #e6e6e6;
+  color: #f29004;
+  border-left: 5px solid #f29004;
+}
+header {
+  width: 100%;
+  height: 39px;
+  background: #f29004;
+  color: white;
+  font-size: 1.7rem;
+  line-height: 39px;
+  position: relative;
+}
+header div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+header div:nth-child(1) {
+  width: 2.93%;
+  height: 18px;
+  left: 3.6%;
+  background: url(../active/left.png) no-repeat;
+}
+header div:nth-child(2) {
+  width: 21.3%;
+  left: 50%;
+  right: 50%;
+  margin-left: -10.65%;
+  text-align: center;
+}
+section {
+  width: 100%;
+}
+section .content.mui-content {
+  width: 100%;
+  padding-top: 0;
+  position: relative;
+}
+section .content.mui-content .menus {
+  width: 100%;
+}
+section .content.mui-content .menus div a img {
+  width: 100%;
+}
+section .content.mui-content .menus .spot {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+section .content.mui-content .menus .spot li {
+  width: 9px;
+  height: 9px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10px;
+}
+section .section_content {
+  width: 100%;
+  font-size: 1.4rem;
+}
+section .section_content .section_content_left {
+  width: 28%;
+  text-align: center;
+  float: left;
+}
+section .section_content .section_content_left li {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+section .section_content .section_content_right {
+  width: 72%;
+  overflow-y: scroll;
+  background: #fff;
+  float: left;
+}
+section .section_content .section_content_right .mui-media-object.pic_introduce {
+  max-width: 34%;
+  height: 75px;
+}
+section .section_content .section_content_right .goods_title {
+  display: inline-block;
+  width: 100%;
+  white-space: normal;
+}
+section .section_content .section_content_right .goods_price {
+  margin-top: 14px;
+}
+section .section_content .section_content_right .price {
+  color: red;
+  font-size: 1.4rem;
+}
+section .section_content .section_content_right .init_price {
+  font-size: 1.4rem;
+  margin-left: 6px;
+}
+/*# sourceMappingURL=9.food&living.css.map */

@@ -1,0 +1,199 @@
+.btn {
+  background-color: #ec6a17;
+  color: #ffffff;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pic_slider {
+  overflow: hidden;
+  position: relative;
+}
+.pic_slider .pic_inner {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 470px;
+}
+.pic_slider .pic_inner a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.pic_slider .pic_inner a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.pic_slider .paganation {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  -webkit-user-select: none;
+}
+.pic_slider .paganation span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  background-color: #323333;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.pic_slider .paganation span.active {
+  background-color: #ec6a17;
+  color: #fff;
+}
+#section .content {
+  width: 984px;
+  min-height: 544px;
+  float: right;
+  border: 1px solid #d3d3d3;
+  background-color: #ffffff;
+  overflow: auto;
+  position: relative;
+}
+#section .content .title {
+  padding-left: 20px;
+  line-height: 57px;
+  height: 57px;
+  border-bottom: 1px solid #d3d3d3;
+  color: #008de1;
+  font-size: 18px;
+}
+#section .content .title a {
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #ec6a17;
+  float: right;
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin: 13.5px 10px;
+  border-radius: 4px;
+}
+#section .content .address-list {
+  padding: 15px 20px;
+}
+#section .content .address {
+  margin: 0 auto;
+}
+#section .content .address dt,
+#section .content .address dd {
+  overflow: hidden;
+  border-bottom: 1px solid #d3d3d3;
+}
+#section .content .address dt .col1,
+#section .content .address dd .col1 {
+  width: 55px;
+}
+#section .content .address dt .col2,
+#section .content .address dd .col2 {
+  width: 75px;
+}
+#section .content .address dt .col3,
+#section .content .address dd .col3 {
+  width: 140px;
+}
+#section .content .address dt .col4,
+#section .content .address dd .col4 {
+  width: 280px;
+}
+#section .content .address dt .col5,
+#section .content .address dd .col5 {
+  width: 120px;
+}
+#section .content .address dt .col6,
+#section .content .address dd .col6 {
+  width: 100px;
+}
+#section .content .address dt .col7,
+#section .content .address dd .col7 {
+  width: 170px;
+}
+#section .content .address dt > div,
+#section .content .address dd > div {
+  float: left;
+  text-align: center;
+  padding: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#section .content .address dd:hover {
+  background-color: #fff3ec;
+}
+#section .content .address dd > div {
+  height: 32px;
+  line-height: 32px;
+  font-size: 12px;
+}
+#section .content .address dt {
+  border: none;
+  background-color: #eeeeee;
+}
+#section .content .address dt > div {
+  height: 38px;
+  line-height: 38px;
+  font-size: 14px;
+  font-weight: bold;
+}
+#section .content .address dd a {
+  padding: 0 11px 0 8px;
+}
+#section .content .address .setBtn {
+  color: #ec6a17;
+  border-right: 1px solid #666666;
+}
+#section .content .address .changeBtn {
+  color: #008de1;
+  border-right: 1px solid #666666;
+}
+#section .content .address .delBtn {
+  color: #008de1;
+}
+#section .content .address-list,
+#section .content .empty {
+  display: none;
+}
+#section .content .empty {
+  text-align: center;
+  line-height: 40px;
+  margin-top: 205px;
+}
+#section .content .empty i {
+  display: inline-block;
+  width: 31px;
+  height: 41px;
+  background: url(../../img/icons.png) no-repeat;
+  background-position: -357px 0;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+#section .content .empty span {
+  font-size: 18px;
+  color: #999999;
+}
+#section .content .empty a {
+  font-size: 24px;
+  color: #ec6a17;
+}
+#section .content .show {
+  display: block;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/3.home.css" />
+		<title></title>
+	</head>
+
+	<body>
+		<div id="wrap_home">
+			<header>
+				<div class="header_left">
+					<span>广州</span>
+					<div></div>
+				</div>
+				<div class="header_mid">
+					<span>同城百货</span>
+				</div>
+				<a href="2.3.foodSearch.html" class="header_right"></a>
+			</header>
+			<section>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<a href="###" class="swiper-slide">
+							<img src="img/home9.png" />
+						</a>
+						<a href="###" class="swiper-slide">
+							<img src="img/home9.png" />
+						</a>
+						<a href="###" class="swiper-slide">
+							<img src="img/home12.png" />
+						</a>
+						<a href="###" class="swiper-slide">
+							<img src="img/home12.png" />
+						</a>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination spots"></div>
+				</div>
+				<div class="home_list1 clearfix">
+					<div class="home_list1_left">
+						<a href="###"><img src="img/home4.png"/></a>
+					</div>
+					<div class="home_list1_mid">
+						<a href="###"><img src="img/home5.png"/></a>
+						<a href="###"><img src="img/home6.png"/></a>
+					</div>
+					<div class="home_list1_right">
+						<a href="###"><img src="img/home7.png"/></a>
+						<a href="###"><img src="img/home8.png"/></a>
+					</div>
+				</div>
+				<div class="home_list2">
+					<div class="home_list2_top1">
+						<span></span>
+						<span>特卖专区&nbsp;Sales</span>
+						<span></span>
+					</div>
+					<div class="home_list2_top2">
+							<a href="###"><img src="img/home1.png"/></a>						
+							<a href="###"><img src="img/home2.png"/></a>
+							<a href="###"><img src="img/home3.png"/></a>
+					</div>
+				</div>
+			</section>
+			<div class="transition"></div>
+			<footer class="clearfix">
+				<a href="2.1.home.html" class="active">首页</a>
+				<a href="17.vip_fix.html">会员杂锦</a>
+				<a href="7.1.sort.html">分类</a>
+				<a href="5.1.shopping_car.html">购物车</a>
+				<a href="10.my_home_page.html">我的</a>
+			</footer>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript">
+		var myswiper = new Swiper(".swiper-container", {
+			autoplay: 2000,
+			speed: 600,
+			loop: true,
+			pagination: '.swiper-pagination',
+			calculateHeight: true, //自动计算高度，在响应式布局里特别有用
+			paginationClickable: true,
+			//		autoplayDisableOnInteraction: false,
+		});
+		var sorts = document.querySelectorAll("footer a");
+		function change_sort(){
+			var before = 0;
+			for(var i = 0; i < sorts.length; i++){
+	sorts[i].index = i;			sorts[i].addEventListener("touchstart",function(){
+				sorts[before].className = "";
+				this.className = "active";
+				before = this.index;
+				})
+			}
+		}
+		change_sort();
+	</script>
+
+</html>

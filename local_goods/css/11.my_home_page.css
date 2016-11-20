@@ -1,0 +1,175 @@
+header {
+  width: 100%;
+  background: url(../img/my_page.png) no-repeat;
+  height: 210px;
+  background-size: 100% 444px;
+  background-position: 0px -18px;
+}
+header .head_portrait {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background: url(../img/my_pic.png) no-repeat;
+  background-size: 163.5px 217.5px;
+  background-position: -44px -28px;
+  position: relative;
+  margin: 24px auto;
+}
+header .head_portrait img {
+  width: 22px;
+  height: 17.5px;
+  position: absolute;
+  right: 7px;
+  bottom: -1px;
+}
+header .nick_name {
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+}
+header .vip {
+  width: 74.5px;
+  height: 20.5px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background: rgba(225, 225, 225, 0.3);
+  line-height: 20.5px;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  margin-top: 13px;
+}
+section {
+  padding-bottom: 52px;
+}
+section .mui-table-view-cell {
+  padding-left: 35px;
+}
+section .mui-table-view-cell a {
+  font-size: 1.5rem;
+}
+section .mui-table-view-cell span {
+  width: 20px;
+  height: 21px;
+  display: block;
+  background: url(../active/icon.png) no-repeat;
+  background-size: 216px 226px;
+  position: absolute;
+  left: 20px;
+  top: 9px;
+}
+section .mui-table-view-cell .span1 {
+  background-position: -122px -2px;
+}
+section .mui-table-view-cell .span2 {
+  background-position: -74px -2px;
+}
+section .mui-table-view-cell .span3 {
+  background-position: -97px -2px;
+}
+section .mui-table-view-cell .span4 {
+  background-position: -169px -2px;
+}
+section .mui-table-view-cell .span5 {
+  background-position: -144px -2px;
+}
+section .mui-table-view-cell .span6 {
+  background-position: -49px -2px;
+}
+section .mui-table-view-cell .span7,
+section .mui-table-view-cell .span8 {
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: url(../active/more&cancelled.png) no-repeat;
+  background-size: 50px 21px;
+  background-position: 0 0;
+  position: absolute;
+  left: 22px;
+  top: 9px;
+}
+section .mui-table-view-cell .span8 {
+  background-position: -25px 0;
+}
+section .transition {
+  width: 100%;
+  height: 10px;
+  background: #f2f2f2;
+}
+section .last-li:after {
+  left: 0;
+}
+section .first-li:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #dbdbdb;
+}
+.mui-table-view-cell > a:not(.mui-btn).mui-active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  border-top: 1px solid #ccc;
+}
+footer a {
+  padding-top: 8px;
+  width: 20%;
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  color: #808080;
+}
+footer a:before {
+  content: "";
+  display: block;
+  height: 25px;
+  width: 25px;
+  margin: 0 auto;
+  background: url(../active/icon.png) no-repeat;
+  background-size: 216px 226px;
+}
+footer a:nth-of-type(1):before {
+  background-position: -71px -101px;
+}
+footer a.active:nth-of-type(1):before {
+  background-position: -71px -78px;
+}
+footer a:nth-of-type(2):before {
+  background-position: -47px -101px;
+}
+footer a.active:nth-of-type(2):before {
+  background-position: -47px -78px;
+}
+footer a:nth-of-type(3):before {
+  background-position: -22px -101px;
+}
+footer a.active:nth-of-type(3):before {
+  background-position: -23px -78px;
+}
+footer a:nth-of-type(4):before {
+  background-position: -96px -101px;
+}
+footer a.active:nth-of-type(4):before {
+  background-position: -96px -78px;
+}
+footer a:nth-of-type(5):before {
+  background-position: 0px -101px;
+}
+footer a.active:nth-of-type(5):before {
+  background-position: 0px -78px;
+}
+.active {
+  color: #f6b26d;
+}
+/*# sourceMappingURL=11.my_home_page.css.map */

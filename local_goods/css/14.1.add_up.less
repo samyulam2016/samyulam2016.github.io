@@ -1,0 +1,102 @@
+body {
+    background-color: #f2f2f2;
+}
+header {
+    width: 100%;
+    height: 39px;
+    background: #f29004;
+    color: white;
+    font-size: 1.7rem;
+    line-height: 39px;
+    position: relative;
+    div {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    div:nth-child(1) {
+        width: 2.93%;
+        height: 18px;
+        left: 3.6%;
+        background: url("../active/left.png") no-repeat;
+    }
+    div:nth-child(2) {
+        width: 21.3%;
+        left: 50%;
+        right: 50%;
+        margin-left: -10.65%;
+        text-align: center;
+    }
+    .bill {
+        position: absolute;
+        right: 3.6%;
+        font-size: 1.4rem;
+        color: #fff;
+    }
+}
+section {
+    .top_up {
+        height: 88px;
+        background: #fff;
+        margin-top: 14px;
+        .top_up_header {
+            border-bottom: 2px solid #F2F2F2;
+            height: 44px;
+            font-size: 1.4rem;
+            line-height: 44px;
+            span:first-child {
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                background: url("../active/pay_icon.png") no-repeat;
+                background-size: 354.5px 30.5px;
+                vertical-align: middle;
+                margin: 0 13px 0 11px;
+            }
+        }
+        li:last-child {
+            font-size: 1.4rem;
+            line-height: 44px;
+            span:first-child {
+                color: #808080;
+                margin: 0 13px 0 12px;
+            }
+            input {
+                border: none;
+                font-size: 1.4rem;
+                 ::-webkit-input-placeholder {
+                    color: #000;
+                }
+                 :-moz-placeholder {
+                    /* Mozilla Firefox 4 to 18 */
+                    color: #000;
+                }
+                 ::-moz-placeholder {
+                    /* Mozilla Firefox 19+ */
+                    color: #000;
+                }
+                 :-ms-input-placeholder {
+                    /* Internet Explorer 10+ */
+                    color: #000;
+                }
+            }
+        }
+    }
+    .top_up_btn {
+        display: block;
+        width: 85.33%;
+        background: #26c08a;
+        line-height: 46px;
+        text-align: center;
+        border: none;
+        font-size: 1.5rem;
+        color: #fff;
+        margin: auto;
+        border-radius: 7px;
+        margin-top: 53px;
+        span {
+            margin-left: 8px;
+        }
+    }
+}

@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>今日特价</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" href="../css/header.css">
+		<link rel="stylesheet" href="../css/footer.css">
+		<link rel="stylesheet" type="text/css" href="../css/index/today-sale.css"/>
+		<script src="../js/jquery-1.10.1.min.js"></script>
+		<script src="../js/header.js"></script>
+		<script src="../js/index/index.js"></script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="nav-wrap">
+				<div class="nav clearfix">
+					<div class="left">
+						<span>所在城市：</span>
+						<a href="./index/city.html" class="current">	<span>北京</span>
+							<i class="icon"></i>
+						</a>
+
+					</div>
+					<ul class="right">
+						<li>
+							<a href="javascript:void(0);" class="item">登录</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" class="bor item">注册</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" class="bor item">我的订单</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" class="bor item">我的消息</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" class="bor item">我是商家</a>
+						</li>
+						<li>
+							<a href="tel:400-800-8820" class="phone item">
+								<i class="icon"></i>
+								400-800-8820
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="head-wrap">
+				<div class="head clearfix">
+					<div class="left logo">
+						<a href="javascript:void(0);">
+							<img src="../img/logo.png" alt="">
+						</a>
+					</div>
+					<div class="left search-wrap">
+						<ul class="select">
+							<li><a href="javascript:void(0);" class="shop active">商家</a></li>
+							<li><a href="javascript:void(0);"  class="goods">商品</a></li>
+						</ul>
+						<div class="search">
+							<input type="text" class="keyword" placeholder="请输入商家名称或关键字进行筛选">
+							<a href="javascript:void(0);"></a>
+						</div>
+						<ul class="hot">
+							<li>
+								<span>热门:</span>
+							</li>
+							<li class="shop-item">
+								<a href="javascript:void(0);">酒店</a>
+							</li>
+							<li class="shop-item">
+								<a href="javascript:void(0);">酒店</a>
+							</li>
+							<li class="shop-item">
+								<a href="javascript:void(0);">酒店</a>
+							</li>
+							<li class="goods-item">
+								<a href="javascript:void(0);">烤肉</a>
+							</li>
+							<li class="goods-item">
+								<a href="javascript:void(0);">烤肉</a>
+							</li>
+							<li class="goods-item">
+								<a href="javascript:void(0);">烤肉</a>
+							</li>
+						</ul>
+					</div>
+					<ul class="right clearfix">
+						<li>
+							<a href="javascript:void(0);" class="user">
+								<i class="icon icon_left"></i>
+								我的易和
+								<i class="icon icon_right"></i>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" class="cart">
+								<i class="icon icon_left"></i>
+								购物车
+								<i class="icon icon_right"></i>
+							</a>
+							<i class="amount show">0</i>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="header-nav">
+				<div class="nav clearfix">
+					<div class="classify">
+						<p>行业分类<i class="icon"></i></p>
+						<div class="list-wrap">
+							<ul class="first-list">
+								<li><a href="javascript:void(0);">服装市场<i class="icon"></i></a></li>
+								<li><a href="javascript:void(0);">建材装修<i class="icon"></i></a></li>
+								<li><a href="javascript:void(0);">休闲娱乐<i class="icon"></i></a></li>
+								<li><a href="javascript:void(0);">生活服务<i class="icon"></i></a></li>
+								<li><a href="javascript:void(0);">3C市场<i class="icon"></i></a></li>
+								<li><a href="javascript:void(0);">丽人<i class="icon"></i></a></li>
+								<li><a href="javascript:void(0);">本地生活<i class="icon"></i></a></li>
+								<li><a href="javascript:void(0);">购物<i class="icon"></i></a></li>
+								<li><a href="javascript:void(0);">电子数码<i class="icon"></i></a></li>
+							</ul>
+							<div class="second-list">
+								<div class="list-bg"></div>
+								<div class="item">
+									<ul class="item-list item-list1">
+										<li><a href="javascript:void(0);">手机商家</a></li>
+										<li><a href="javascript:void(0);">电脑及配件</a></li>
+										<li><a href="javascript:void(0);">厨房电器件</a></li>
+										<li><a href="javascript:void(0);">智能生活</a></li>
+										<li><a href="javascript:void(0);">个护保健</a></li>
+										<li><a href="javascript:void(0);">显示器</a></li>
+										<li><a href="javascript:void(0);">油烟机</a></li>
+									</ul>
+								</div>
+								<div class="item">
+									<ul class="item-list item-list1">
+										<li><a href="javascript:void(0);">手机商家</a></li>
+										<li><a href="javascript:void(0);">电脑及配件</a></li>
+										<li><a href="javascript:void(0);">厨房电器件</a></li>
+										<li><a href="javascript:void(0);">智能生活</a></li>
+										<li><a href="javascript:void(0);">个护保健</a></li>
+										<li><a href="javascript:void(0);">显示器</a></li>
+										<li><a href="javascript:void(0);">油烟机</a></li>
+									</ul>
+									<ul class="item-list item-list2">
+										<li><a href="javascript:void(0);">手机商家</a></li>
+										<li><a href="javascript:void(0);">电脑及配件</a></li>
+										<li><a href="javascript:void(0);">厨房电器件</a></li>
+										<li><a href="javascript:void(0);">智能生活</a></li>
+										<li><a href="javascript:void(0);">个护保健</a></li>
+										<li><a href="javascript:void(0);">显示器</a></li>
+										<li><a href="javascript:void(0);">油烟机</a></li>
+									</ul>
+								</div>
+								<div class="item">
+									<ul class="item-list item-list1">
+										<li><a href="javascript:void(0);">手机商家</a></li>
+										<li><a href="javascript:void(0);">电脑及配件</a></li>
+										<li><a href="javascript:void(0);">厨房电器件</a></li>
+										<li><a href="javascript:void(0);">智能生活</a></li>
+										<li><a href="javascript:void(0);">个护保健</a></li>
+										<li><a href="javascript:void(0);">显示器</a></li>
+										<li><a href="javascript:void(0);">油烟机</a></li>
+									</ul>
+								</div>
+								<div class="item">
+									<ul class="item-list item-list1">
+										<li><a href="javascript:void(0);">手机商家</a></li>
+										<li><a href="javascript:void(0);">电脑及配件</a></li>
+										<li><a href="javascript:void(0);">厨房电器件</a></li>
+										<li><a href="javascript:void(0);">智能生活</a></li>
+										<li><a href="javascript:void(0);">个护保健</a></li>
+										<li><a href="javascript:void(0);">显示器</a></li>
+										<li><a href="javascript:void(0);">油烟机</a></li>
+									</ul>
+									<ul class="item-list item-list2">
+										<li><a href="javascript:void(0);">手机商家</a></li>
+										<li><a href="javascript:void(0);">电脑及配件</a></li>
+										<li><a href="javascript:void(0);">厨房电器件</a></li>
+										<li><a href="javascript:void(0);">智能生活</a></li>
+										<li><a href="javascript:void(0);">个护保健</a></li>
+										<li><a href="javascript:void(0);">显示器</a></li>
+										<li><a href="javascript:void(0);">油烟机</a></li>
+									</ul>
+								</div>
+								<div class="item">
+									<ul class="item-list item-list1">
+										<li><a href="javascript:void(0);">手机商家</a></li>
+										<li><a href="javascript:void(0);">电脑及配件</a></li>
+										<li><a href="javascript:void(0);">厨房电器件</a></li>
+										<li><a href="javascript:void(0);">智能生活</a></li>
+										<li><a href="javascript:void(0);">个护保健</a></li>
+										<li><a href="javascript:void(0);">显示器</a></li>
+										<li><a href="javascript:void(0);">油烟机</a></li>
+									</ul>
+								</div>
+								<div class="item">
+									<ul class="item-list item-list1">
+										<li><a href="javascript:void(0);">手机商家</a></li>
+										<li><a href="javascript:void(0);">电脑及配件</a></li>
+										<li><a href="javascript:void(0);">厨房电器件</a></li>
+										<li><a href="javascript:void(0);">智能生活</a></li>
+										<li><a href="javascript:void(0);">个护保健</a></li>
+										<li><a href="javascript:void(0);">显示器</a></li>
+										<li><a href="javascript:void(0);">油烟机</a></li>
+									</ul>
+									<ul class="item-list item-list2">
+										<li><a href="javascript:void(0);">手机商家</a></li>
+										<li><a href="javascript:void(0);">电脑及配件</a></li>
+										<li><a href="javascript:void(0);">厨房电器件</a></li>
+										<li><a href="javascript:void(0);">智能生活</a></li>
+										<li><a href="javascript:void(0);">个护保健</a></li>
+										<li><a href="javascript:void(0);">显示器</a></li>
+										<li><a href="javascript:void(0);">油烟机</a></li>
+									</ul>
+								</div>
+								<div class="item">
+									<ul class="item-list item-list1">
+										<li><a href="javascript:void(0);">手机商家</a></li>
+										<li><a href="javascript:void(0);">电脑及配件</a></li>
+										<li><a href="javascript:void(0);">厨房电器件</a></li>
+										<li><a href="javascript:void(0);">智能生活</a></li>
+										<li><a href="javascript:void(0);">个护保健</a></li>
+										<li><a href="javascript:void(0);">显示器</a></li>
+										<li><a href="javascript:void(0);">油烟机</a></li>
+									</ul>
+								</div>
+								<div class="item">
+									<ul class="item-list item-list1">
+										<li><a href="javascript:void(0);">手机商家</a></li>
+										<li><a href="javascript:void(0);">电脑及配件</a></li>
+										<li><a href="javascript:void(0);">厨房电器件</a></li>
+										<li><a href="javascript:void(0);">智能生活</a></li>
+										<li><a href="javascript:void(0);">个护保健</a></li>
+										<li><a href="javascript:void(0);">显示器</a></li>
+										<li><a href="javascript:void(0);">油烟机</a></li>
+									</ul>
+									<ul class="item-list item-list2">
+										<li><a href="javascript:void(0);">手机商家</a></li>
+										<li><a href="javascript:void(0);">电脑及配件</a></li>
+										<li><a href="javascript:void(0);">厨房电器件</a></li>
+										<li><a href="javascript:void(0);">智能生活</a></li>
+										<li><a href="javascript:void(0);">个护保健</a></li>
+										<li><a href="javascript:void(0);">显示器</a></li>
+										<li><a href="javascript:void(0);">油烟机</a></li>
+									</ul>
+								</div>
+								<div class="item">
+									<ul class="item-list item-list1">
+										<li><a href="javascript:void(0);">手机商家</a></li>
+										<li><a href="javascript:void(0);">电脑及配件</a></li>
+										<li><a href="javascript:void(0);">厨房电器件</a></li>
+										<li><a href="javascript:void(0);">智能生活</a></li>
+										<li><a href="javascript:void(0);">个护保健</a></li>
+										<li><a href="javascript:void(0);">显示器</a></li>
+										<li><a href="javascript:void(0);">油烟机</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<ul class="goto">
+						<li><a href="javascript:void(0);" class="active">首页</a></li>
+						<li><a href="javascript:void(0);">精选品牌</a></li>
+						<li><a href="javascript:void(0);">今日特价</a></li>
+						<li><a href="javascript:void(0);">积分商城</a></li>
+						<li><a href="javascript:void(0);">加入易和</a></li>
+					</ul>
+					<div class="help">
+						<a href="javascript:void(0);">在线客服</a>
+						<div class="help-list">
+							<a href="javascript:void(0);"><i class="icon"></i>QQ客服1</a>
+							<a href="javascript:void(0);"><i class="icon"></i>QQ客服2</a>
+							<a href="javascript:void(0);"><i class="icon"></i>QQ客服3</a>
+							<img src="../img/help_code.jpg" alt="">
+							<i class="icon_arrow"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="mainContent">
+			<!-- <div class="Carousel-figure">
+				<div class="Carousel-figure-slide">
+					<a href="javascript:void(0);" class="active">
+						<img src="../img/active/today-sale-cf.png"/>
+					</a>
+					<a href="javascript:void(0);" >
+						<img src="../img/active/today-sale-cf.png"/>
+					</a>
+					<a href="javascript:void(0);">
+						<img src="../img/active/today-sale-cf.png"/>
+					</a>
+					<a href="javascript:void(0);">
+						<img src="../img/active/today-sale-cf.png"/>
+					</a>
+				</div>
+				<ul class="slideBtn">
+					<li class="sildeActive"></li>
+					<li class="center"></li>
+					<li></li>
+				</ul>
+			</div> -->
+			<div class="pic_slider">
+				<div class="pic_inner clearfix">
+					<a href="###"><img src="../img/active/index/slider1.png" alt=""></a>
+					<a href="###"><img src="../img/active/index/slider1.png" alt=""></a>
+					<a href="###"><img src="../img/active/index/slider1.png" alt=""></a>
+					<a href="###"><img src="../img/active/index/slider1.png" alt=""></a>
+					<a href="###"><img src="../img/active/index/slider1.png" alt=""></a>
+					<a href="###"><img src="../img/active/index/slider1.png" alt=""></a>			
+				</div>
+				<div class="paganation">
+					<span class="active"></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<div class="Product-Content">
+				<div class="Flash-sale">
+					<div class="title">
+						<span class="s1">限量</span>
+						<span class="s2">抢购</span>
+						每日精选12款特价商品，天天送不停
+					</div>
+					<div class="item-select-wrap">
+						<div class="leftBtn"></div>
+						<div class="rightBtn"></div>
+						<ul class="item-select-lists">						
+							<li class="list1 liActive">
+								<a href="javascript:void(0);">
+									<div class="image">
+										<img src="../img/active/business-commodity.png"/>
+									</div>
+									<div class="detail">
+										<h3>自家礼包送情人，送朋友的布尔选择,自家礼包送情人，送朋友的布尔选择</h3>
+										<p class="price"><span class="nowPrice">￥11.8</span><span class="beforePrice">￥20</span></p>
+									</div>								
+								</a>
+							</li>
+							<li class="list1 liActive">
+								<a href="javascript:void(0);">
+									<div class="image">
+										<img src="../img/active/business-commodity.png"/>
+									</div>
+									<div class="detail">
+										<h3>自家礼包送情人，送朋友的布尔选择,自家礼包送情人，送朋友的布尔选择</h3>
+										<p class="price"><span class="nowPrice">￥11.8</span><span class="beforePrice">￥20</span></p>
+									</div>								
+								</a>
+							</li>
+							<li class="list1 liActive">
+								<a href="javascript:void(0);">
+									<div class="image">
+										<img src="../img/active/business-commodity.png"/>
+									</div>
+									<div class="detail">
+										<h3>自家礼包送情人送朋友的布尔选择,自家礼包送情人，送朋友的布尔选择</h3>
+										<p class="price"><span class="nowPrice">￥11.8</span><span class="beforePrice">￥20</span></p>
+									</div>								
+								</a>
+							</li>
+							<li class="list1 liActive">
+								<a href="javascript:void(0);">
+									<div class="image">
+										<img src="../img/active/business-commodity.png"/>
+									</div>
+									<div class="detail">
+										<h3>自家礼包送情人，送朋友的布尔选择,自家礼包送情人，送朋友的布尔选择</h3>
+										<p class="price"><span class="nowPrice">￥11.8</span><span class="beforePrice">￥20</span></p>
+									</div>								
+								</a>
+							</li>
+							<li class="list1 liActive">
+								<a href="javascript:void(0);">
+									<div class="image">
+										<img src="../img/active/business-commodity.png"/>
+									</div>
+									<div class="detail">
+										<h3>自家礼包送情人，送朋友的布尔选择,自家礼包送情人，送朋友的布尔选择</h3>
+										<p class="price"><span class="nowPrice">￥11.8</span><span class="beforePrice">￥20</span></p>
+									</div>								
+								</a>
+							</li>
+							<li class="list1 liActive">
+								<a href="javascript:void(0);">
+									<div class="image">
+										<img src="../img/active/business-commodity.png"/>
+									</div>
+									<div class="detail">
+										<h3>自家礼包送情人，送朋友的布尔选择,自家礼包送情人，送朋友的布尔选择</h3>
+										<p class="price"><span class="nowPrice">￥11.8</span><span class="beforePrice">￥20</span></p>
+									</div>								
+								</a>
+							</li>
+							<li class="list1 liActive">
+								<a href="javascript:void(0);">
+									<div class="image">
+										<img src="../img/active/business-commodity.png"/>
+									</div>
+									<div class="detail">
+										<h3>自家礼包送情人，送朋友的布尔选择,自家礼包送情人，送朋友的布尔选择</h3>
+										<p class="price"><span class="nowPrice">￥11.8</span><span class="beforePrice">￥20</span></p>
+									</div>								
+								</a>
+							</li>
+						</ul>
+				 </div>
+				</div>
+				<div class="Commodity">
+					<div class="title">
+						<span class="s1">今日</span>
+						<span class="s2">特价</span>
+						Commodity
+					</div>
+					<ul class="commodity-lists">
+						<li class="list1 liActive">
+							<a href="javascript:void(0);">
+								<div class="image">
+									<img src="../img/active/business-commodity.png"/>
+								</div>
+								<div class="detail">
+									<h3>自家礼包送情人，送朋友的布尔选择</h3>
+									<p class="price"><span class="nowPrice">￥11.8</span><span class="beforePrice">￥20</span></p>
+								</div>								
+							</a>
+						</li>
+						<li class="list1">
+							<a href="javascript:void(0);">
+								<div class="image">
+									<img src="../img/active/business-commodity.png"/>
+								</div>
+								<div class="detail">
+									<h3>自家礼包送情人，送朋友的布尔选择</h3>
+									<p class="price"><span class="nowPrice">￥11.8</span><span class="beforePrice">￥20</span></p>
+								</div>								
+							</a>
+						</li>
+						<li class="list1">
+							<a href="javascript:void(0);">
+								<div class="image">
+									<img src="../img/active/business-commodity.png"/>
+								</div>
+								<div class="detail">
+									<h3>自家礼包送情人，送朋友的布尔选择</h3>
+									<p class="price"><span class="nowPrice">￥11.8</span><span class="beforePrice">￥20</span></p>
+								</div>								
+							</a>
+						</li>
+						<li class="list1">
+							<a href="javascript:void(0);">
+								<div class="image">
+									<img src="../img/active/business-commodity.png"/>
+								</div>
+								<div class="detail">
+									<h3>自家礼包送情人，送朋友的布尔选择</h3>
+									<p class="price"><span class="nowPrice">￥11.8</span><span class="beforePrice">￥20</span></p>
+								</div>								
+							</a>
+						</li>
+						<li class="list1">
+							<a href="javascript:void(0);">
+								<div class="image">
+									<img src="../img/active/business-commodity.png"/>
+								</div>
+								<div class="detail">
+									<h3>自家礼包送情人，送朋友的布尔选择</h3>
+									<p class="price"><span class="nowPrice">￥11.8</span><span class="beforePrice">￥20</span></p>
+								</div>								
+							</a>
+						</li>
+						<li class="list1">
+							<a href="javascript:void(0);">
+								<div class="image">
+									<img src="../img/active/business-commodity.png"/>
+								</div>
+								<div class="detail">
+									<h3>自家礼包送情人，送朋友的布尔选择</h3>
+									<p class="price"><span class="nowPrice">￥11.8</span><span class="beforePrice">￥20</span></p>
+								</div>								
+							</a>
+						</li>
+						<li class="list1">
+							<a href="javascript:void(0);">
+								<div class="image">
+									<img src="../img/active/business-commodity.png"/>
+								</div>
+								<div class="detail">
+									<h3>自家礼包送情人，送朋友的布尔选择</h3>
+									<p class="price"><span class="nowPrice">￥11.8</span><span class="beforePrice">￥20</span></p>
+								</div>								
+							</a>
+						</li>
+						<li class="list1">
+							<a href="javascript:void(0);">
+								<div class="image">
+									<img src="../img/active/business-commodity.png"/>
+								</div>
+								<div class="detail">
+									<h3>自家礼包送情人，送朋友的布尔选择</h3>
+									<p class="price"><span class="nowPrice">￥11.8</span><span class="beforePrice">￥20</span></p>
+								</div>								
+							</a>
+						</li>
+						<li class="list1">
+							<a href="javascript:void(0);">
+								<div class="image">
+									<img src="../img/active/business-commodity.png"/>
+								</div>
+								<div class="detail">
+									<h3>自家礼包送情人，送朋友的布尔选择</h3>
+									<p class="price"><span class="nowPrice">￥11.8</span><span class="beforePrice">￥20</span></p>
+								</div>								
+							</a>
+						</li>
+						<li class="list1">
+							<a href="javascript:void(0);">
+								<div class="image">
+									<img src="../img/active/business-commodity.png"/>
+								</div>
+								<div class="detail">
+									<h3>自家礼包送情人，送朋友的布尔选择</h3>
+									<p class="price"><span class="nowPrice">￥11.8</span><span class="beforePrice">￥20</span></p>
+								</div>								
+							</a>
+						</li>
+						<li class="list1">
+							<a href="javascript:void(0);">
+								<div class="image">
+									<img src="../img/active/business-commodity.png"/>
+								</div>
+								<div class="detail">
+									<h3>自家礼包送情人，送朋友的布尔选择</h3>
+									<p class="price"><span class="nowPrice">￥11.8</span><span class="beforePrice">￥20</span></p>
+								</div>								
+							</a>
+						</li>
+						<li class="list1">
+							<a href="javascript:void(0);">
+								<div class="image">
+									<img src="../img/active/business-commodity.png"/>
+								</div>
+								<div class="detail">
+									<h3>自家礼包送情人，送朋友的布尔选择</h3>
+									<p class="price"><span class="nowPrice">￥11.8</span><span class="beforePrice">￥20</span></p>
+								</div>								
+							</a>
+						</li>
+						<li class="list1">
+							<a href="javascript:void(0);">
+								<div class="image">
+									<img src="../img/active/business-commodity.png"/>
+								</div>
+								<div class="detail">
+									<h3>自家礼包送情人，送朋友的布尔选择</h3>
+									<p class="price"><span class="nowPrice">￥11.8</span><span class="beforePrice">￥20</span></p>
+								</div>								
+							</a>
+						</li>
+						<li class="list1">
+							<a href="javascript:void(0);">
+								<div class="image">
+									<img src="../img/active/business-commodity.png"/>
+								</div>
+								<div class="detail">
+									<h3>自家礼包送情人，送朋友的布尔选择</h3>
+									<p class="price"><span class="nowPrice">￥11.8</span><span class="beforePrice">￥20</span></p>
+								</div>								
+							</a>
+						</li>
+						<li class="list1">
+							<a href="javascript:void(0);">
+								<div class="image">
+									<img src="../img/active/business-commodity.png"/>
+								</div>
+								<div class="detail">
+									<h3>自家礼包送情人，送朋友的布尔选择</h3>
+									<p class="price"><span class="nowPrice">￥11.8</span><span class="beforePrice">￥20</span></p>
+								</div>								
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="select_page">
+					<a href="###"><span class="home_page">首页</span></a>
+					<span class="previous_page">上一页</span><span class="active">1</span><span>2</span><span>3</span><span>...</span><span>58</span><span>59</span><span class="next_page">下一页</span><div>共59页,</div><div>到第<input type="text" class="select_page_border"/>页</div><a href="###" class="confirm_btn">确定</a><div class="sum_page">共215条</div>
+				</div>
+			</div>			
+		</div>
+		
+		<div id="footer">
+			<div class="icon-list">
+				<ul>
+					<li class="icon-1"><a href="javascript:void(0);"><i class="icon"></i>正品保障</a></li>
+					<li class="icon-2"><a href="javascript:void(0);"><i class="icon"></i>全程追踪</a></li>
+					<li class="icon-3"><a href="javascript:void(0);"><i class="icon"></i>客户监督</a></li>
+					<li class="icon-4"><a href="javascript:void(0);"><i class="icon"></i>售后无忧</a></li>
+					<li class="icon-5"><a href="javascript:void(0);"><i class="icon"></i>准时送达</a></li>
+				</ul>
+			</div>
+			<div class="info">
+				<div class="logo">
+					<a href="./index.html"><img src="../img/logo.png" alt=""></a>
+				</div>
+				<div class="code">
+					<div class="wx">
+						<img src="../img/help_code.jpg" alt="">
+						<p><i class="icon"></i>官方微信</p>
+					</div>
+					<div class="app">
+						<img src="../img/help_code.jpg" alt="">
+						<p><i class="icon"></i>app下载</p>
+					</div>
+				</div>
+				<div class="right-list">
+					<dl>
+						<dt><h2><a href="javascript:void(0);">关于易和</a></h2></dt>
+						<dd><a href="javascript:void(0);">新用户注册</a></dd>
+						<dd><a href="javascript:void(0);">在线下单</a></dd>
+						<dd><a href="javascript:void(0);">支付方式</a></dd>
+					</dl>
+					<dl>
+						<dt><h2><a href="javascript:void(0);">配送说明</a></h2></dt>
+						<dd><a href="javascript:void(0);">运费说明</a></dd>
+						<dd><a href="javascript:void(0);">配送方式</a></dd>
+						<dd><a href="javascript:void(0);">发票说明</a></dd>
+					</dl>
+					<dl>
+						<dt><h2><a href="javascript:void(0);">售后服务</a></h2></dt>
+						<dd><a href="javascript:void(0);">退换货说明</a></dd>
+						<dd><a href="javascript:void(0);">服务保障承诺</a></dd>
+						<dd><a href="javascript:void(0);">验货与签收</a></dd>
+					</dl>
+					<dl>
+						<dt><h2><a href="javascript:void(0);">加盟易和</a></h2></dt>
+						<dd><a href="javascript:void(0);">加盟条款</a></dd>
+						<dd><a href="javascript:void(0);">公司简介</a></dd>
+						<dd><a href="javascript:void(0);">服务协议</a></dd>
+					</dl>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="copyright">
+					<span>版权所有 &copy; 2016易和生活港</span>
+					<span class="middle">保留所有权利</span>
+					<span>沪ICP备12042163</span>
+				</div>
+				<div class="txt">
+					<span>易和生活</span>
+					<span>纵享品质</span>
+				</div>
+			</div>
+		</div>		
+		<script>
+			// $(function(){
+			// 	//大图滚动
+			// 	$(".Carousel-figure-slide a").each(function(index,item){
+			// 		$(item).css("left",$(item).width()*index);
+			// 	})
+			// 	var cfSlide = $(".Carousel-figure-slide");
+			// 	var cfSlideIndex = 0;		
+			// 	var preWidth = $(".Carousel-figure-slide a").width();
+			// 	var slidetime = null;
+			// 	var slideBtnIndex = 0;
+			// 	var slideBtn = $(".slideBtn li");
+			// 	function tabMove(){
+			// 		cfSlide.stop().animate({
+   //    					left:-cfSlideIndex*preWidth,
+   //    				},500);
+   //    				if(slideBtnIndex > slideBtn.length - 1){
+			// 			slideBtnIndex = 0;
+			// 		}
+			// 		slideBtn.eq(slideBtnIndex).addClass("sildeActive").siblings().removeClass("sildeActive");
+			// 	}				
+			// 	function tabAutomove(){
+			// 		slidetime = setInterval(function(){
+			// 		slideBtnIndex ++;
+			// 		if(cfSlideIndex > slideBtn.length - 1){
+			// 			cfSlideIndex = 0;						
+			// 			cfSlide.css("left",0);
+			// 		}					
+			// 		cfSlideIndex++;
+			// 		tabMove();					
+			// 	  },3000);
+			// 	}
+			// 	slideBtn.on("click",function(){
+			// 		clearInterval(slidetime);
+			// 		cfSlideIndex = $(this).index();
+			// 		slideBtnIndex = $(this).index();
+			// 		tabMove();
+			// 		tabAutomove();
+			// 	})
+			// 	tabAutomove();
+			// })
+			
+			//限量抢购选择
+			$(function(){
+				var item_wrap = $(".item-select-wrap");
+				var item_lists = $(".item-select-wrap .item-select-lists");
+				var item_index = 0;
+				var item_li = $(".item-select-lists li");
+				var preWidth = item_li.eq(0).outerWidth();
+				var leftBtn = $(".item-select-wrap .leftBtn");
+				var rightBtn = $(".item-select-wrap .rightBtn");
+				item_li.each(function(index,item){
+					$(item).css("left",(preWidth+20)*index);
+				})
+				item_wrap.hover(function(){
+					leftBtn.stop().animate({
+      					left:0
+      				},250);
+      				rightBtn.stop().animate({
+      					right:1.5
+      				},250);
+				},function(){
+					leftBtn.stop().animate({
+      					left:-$(this).width()
+      				},250);
+      				rightBtn.stop().animate({
+      					right:-$(this).width()
+      				},250);
+				})
+				rightBtn.on("click",function(){
+					if(item_index > item_li.length - 5){return}
+					item_index ++;
+					item_lists.stop().animate({
+      					left:-(preWidth+20)*item_index
+      				},500);
+				})
+				leftBtn.on("click",function(){
+					if(item_index <= 0){return}
+					item_index --;
+					item_lists.stop().animate({
+      					left:-(preWidth+20)*item_index
+      				},500);
+				})
+			})
+			//商品列表
+			$(function(){				
+				var commodityIndex = 0;
+				var commodityLi = $(".Commodity .commodity-lists li");
+				commodityLi.on("mouseover",function(){
+					commodityLi.eq(commodityIndex).removeClass("liActive");
+					$(this).addClass("liActive");					
+					commodityIndex = $(this).index();
+				})
+			})
+		</script>
+	</body>
+</html>
+
+
+
+

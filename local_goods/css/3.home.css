@@ -1,0 +1,196 @@
+.active {
+  color: #F29004;
+}
+header {
+  width: 100%;
+  background: #f29004;
+  height: 43px;
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 43px;
+  position: relative;
+}
+header .header_left {
+  display: inline-block;
+  padding-left: 2.66%;
+}
+header .header_left div {
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  background: url(../active/small_icon.png) no-repeat;
+  background-size: 200px 200px;
+  background-position: -82px -5px;
+}
+header .header_left div.active {
+  background-position: -101px -5px;
+}
+header .header_mid {
+  width: 40%;
+  height: 43px;
+  position: absolute;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  line-height: 43px;
+}
+header .header_right {
+  display: inline-block;
+  width: 22px;
+  height: 21px;
+  background: url(../active/small_icon.png);
+  background-size: 200px 200px;
+  background-position: -127px -2px;
+  position: absolute;
+  right: 2.66%;
+  top: 12px;
+}
+section {
+  background: #f2f2f2;
+  padding-bottom: 50px;
+}
+section .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #f59650;
+}
+section .swiper-container .swiper-slide a img {
+  width: 100%;
+  height: 100%;
+}
+section .home_list1 {
+  width: 100%;
+  margin-top: 10px;
+}
+section .home_list1 .home_list1_left {
+  width: 29.86%;
+  margin-left: 2.53%;
+  float: left;
+}
+section .home_list1 .home_list1_left img {
+  width: 100%;
+}
+section .home_list1 .home_list1_mid {
+  width: 31.33%;
+  float: left;
+  margin-left: 1%;
+}
+section .home_list1 .home_list1_mid img {
+  width: 100%;
+}
+section .home_list1 .home_list1_mid img:nth-child(2) {
+  margin-top: 5px;
+}
+section .home_list1 .home_list1_right {
+  margin-left: 1%;
+  width: 31.33%;
+  float: left;
+}
+section .home_list1 .home_list1_right img {
+  width: 100%;
+}
+section .home_list1 .home_list1_right img:nth-child(2) {
+  margin-top: 5px;
+}
+section .home_list2 {
+  margin-top: 10px;
+  width: 100%;
+}
+section .home_list2 .home_list2_top1 {
+  width: 100%;
+  text-align: center;
+}
+section .home_list2 .home_list2_top1 span {
+  width: 30%;
+  display: inline-block;
+  font-size: 1.4rem;
+  color: #ccc;
+}
+section .home_list2 .home_list2_top1 span:nth-child(1) {
+  background: #ccc;
+  height: 1px;
+}
+section .home_list2 .home_list2_top1 span:nth-child(2) {
+  position: relative;
+  top: 3px;
+}
+section .home_list2 .home_list2_top1 span:nth-child(3) {
+  background: #ccc;
+  height: 1px;
+}
+section .home_list2 .home_list2_top2 {
+  width: 100%;
+  margin-top: 10px;
+}
+section .home_list2 .home_list2_top2 a {
+  display: block;
+}
+section .home_list2 .home_list2_top2 a:nth-of-type(2) {
+  margin-top: 3px;
+}
+.transition {
+  width: 100%;
+  height: 6px;
+  background: #f2f2f2;
+}
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  border-top: 1px solid #ccc;
+}
+footer a {
+  padding-top: 8px;
+  width: 20%;
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  color: #808080;
+}
+footer a:before {
+  content: "";
+  display: block;
+  height: 25px;
+  width: 25px;
+  margin: 0 auto;
+  background: url(../active/icon.png) no-repeat;
+  background-size: 216px 226px;
+}
+footer a:nth-of-type(1):before {
+  background-position: -71px -101px;
+}
+footer a.active:nth-of-type(1):before {
+  background-position: -71px -78px;
+  color: #F29004;
+}
+footer a:nth-of-type(2):before {
+  background-position: -47px -101px;
+}
+footer a.active:nth-of-type(2):before {
+  background-position: -47px -78px;
+}
+footer a:nth-of-type(3):before {
+  background-position: -22px -101px;
+}
+footer a.active:nth-of-type(3):before {
+  background-position: -23px -78px;
+}
+footer a:nth-of-type(4):before {
+  background-position: -96px -101px;
+}
+footer a.active:nth-of-type(4):before {
+  background-position: -96px -78px;
+}
+footer a:nth-of-type(5):before {
+  background-position: 0px -101px;
+}
+footer a.active:nth-of-type(5):before {
+  background-position: 0px -78px;
+}
+/*# sourceMappingURL=3.home.css.map */

@@ -1,0 +1,90 @@
+body {
+  background-color: #f2f2f2;
+}
+header {
+  width: 100%;
+  height: 39px;
+  background: #f29004;
+  color: white;
+  font-size: 1.7rem;
+  line-height: 39px;
+  position: relative;
+}
+header div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+header div:nth-child(1) {
+  width: 2.93%;
+  height: 18px;
+  left: 3.6%;
+  background: url("../active/left.png") no-repeat;
+}
+header div:nth-child(2) {
+  width: 40%;
+  left: 50%;
+  right: 50%;
+  margin-left: -20%;
+  text-align: center;
+}
+section form {
+  text-align: center;
+  margin-top: 22px;
+}
+section form input {
+  width: 92.8%;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid #f2f2f2;
+  padding-left: 13px;
+  font-size: 1.5rem;
+}
+section form .trade {
+  margin-bottom: 11px;
+}
+section form .describe {
+  width: 92.8%;
+  height: 78px;
+  margin-top: 11px;
+  padding-left: 13px;
+  font-size: 1.5rem;
+  padding-top: 11px;
+  border-radius: 5px;
+  border: 1px solid #f2f2f2;
+  resize: none;
+}
+section .confirm {
+  width: 85.6%;
+  line-height: 45px;
+  background: #f29004;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.7rem;
+  display: block;
+  margin: auto;
+  margin-top: 156px;
+}
+section .confirm span {
+  margin-left: 12px;
+}
+section .pic {
+  width: 92.8%;
+  font-size: 1.5rem;
+  color: #666666;
+  margin: 17px auto;
+}
+section .add_pic_btn {
+  width: 75px;
+  height: 75px;
+  background: #fff;
+  text-align: center;
+  line-height: 75px;
+  font-size: 2.4rem;
+  color: #ccc;
+  margin-left: 2.7%;
+}
+/*# sourceMappingURL=11.4.i_can_apply.html.css.map */

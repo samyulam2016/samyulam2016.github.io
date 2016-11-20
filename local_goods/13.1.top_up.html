@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/14.1.add_up.css" />
+	</head>
+
+	<body>
+		<header>
+			<a href="13.my_wallet.html"><div>&nbsp;</div></a>
+			<div class="my_wallet">充值</div>
+		</header>
+		<section>
+			<ul class="top_up">
+				<li class="top_up_header">
+					<span></span>
+					<span>支付宝</span>
+				</li>
+				<li>
+					<span>金额</span>
+					<input type="text" placeholder="请输入充值金额"/>
+				</li>
+			</ul>
+			
+			<button class="top_up_btn">下一步</button>
+		</section>
+
+	</body>
+	<script type="text/javascript">
+		var select_pay = document.querySelectorAll(".section_content_top");
+		var select_icon = document.querySelectorAll(".select_icon");
+
+		function hasClass(elements, cName) {
+			return !!elements.className.match(new RegExp("(\\s|^)" + cName + "(\\s|$)"));
+		};
+
+		function addClass(elements, cName) {
+			if(!hasClass(elements, cName)) {
+				elements.className += " " + cName;
+			};
+		};
+
+		function removeClass(elements, cName) {
+			if(hasClass(elements, cName)) {
+				elements.className = elements.className.replace(new RegExp("(\\s|^)" + cName + "(\\s|$)"), " ");
+			};
+		};
+
+		function change_pay() {
+			var before = 0;
+			for(var i = 0; i < select_icon.length; i++) {
+				select_pay[i].index = i;
+				select_pay[i].addEventListener("touchstart", function() {
+					removeClass(select_icon[before], 'active');
+					addClass(select_icon[this.index], 'active');
+					before = this.index;
+				})
+			}
+		}
+		change_pay();
+	</script>
+
+</html>

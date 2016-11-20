@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+		*{margin: 0; padding: 0;}
+			header{
+				height: 100px;
+				border: 10px solid;
+			}
+			main{
+				background: #f8f8f8;
+			}
+			aside,section{
+				float: left;
+			}
+			.clearfix{
+				/*zoom 放大倍数*/
+				*zoom: 1;			
+			}
+			.clearfix:after{
+				content: "";
+				clear: both;
+				visibility: hidden;
+				display: block;
+				font-size: 0;
+				height: 0;
+			}
+			aside{
+				width: 30%;
+				text-align: center;
+			}
+			section{
+				width: 70%;
+			}
+			aside a {
+				display: block;
+				height: 50px;
+				line-height: 50px;
+				text-decoration: none;
+				/*让字体不会动，加个border-left*/
+				border-left: 4px solid transparent;
+			}
+			aside a.active{
+				border-left: 4px solid red;
+				color: blue;		
+				background-color: #ccc;	
+				}
+				section li {
+					padding: 10px;
+					list-style: none;
+				}
+				section{
+					background-color: #fff;
+				}
+				html,body{
+					overflow: hidden;
+				}
+				section {
+					overflow: scroll;
+				}
+				/*section ul{
+					display: none;
+				}
+				section ul:first-child{
+					display: block;
+				}*/
+		</style>
+	</head>
+	<body>
+		<header></header>
+		<main class="clearfix">
+			<aside>
+				<ul>
+					<li><a href="###" class="active">生活百货</a ></li>
+					<li><a href="###">生活百货</a></li>
+					<li><a href="###">生活百货</a></li>
+					<li><a href="###">生活百货</a></li>
+					<li><a href="###">生活百货</a></li>
+				</ul>
+			</aside>
+			<section>
+				<ul>
+					<li>2012年2月22日 -  只要有checked,就算没有值也是选中的,我想应该不要写上checked可以的吧。 试试 对我有用[0] 丢个板砖[0] 引用 | 举报 | 管理 关注 lifei879306004 ...</li>
+					<li>2012年2月22日 -  只要有checked,就算没有值也是选中的,我想应该不要写上checked可以的吧。 试试 对我有用[0] 丢个板砖[0] 引用 | 举报 | 管理 关注 lifei879306004 ...</li>
+					<li>2012年2月22日 -  只要有checked,就算没有值也是选中的,我想应该不要写上checked可以的吧。 试试 对我有用[0] 丢个板砖[0] 引用 | 举报 | 管理 关注 lifei879306004 ...</li>
+					<li>2012年2月22日 -  只要有checked,就算没有值也是选中的,我想应该不要写上checked可以的吧。 试试 对我有用[0] 丢个板砖[0] 引用 | 举报 | 管理 关注 lifei879306004 ...</li>
+				</ul>
+			</section>
+		</main>
+	</body>
+	<script type="text/javascript" src="js/jquery-3.0.0.min.js">
+	</script>
+	<script type="text/javascript">
+		var h = $(window).height() - $("header").outerHeight();
+		$("section").height(h);
+		
+		$("aside").on("click","a",function(){
+//			var index = $("aside a").index($(this));
+var index = $(this).index("aside a");
+			console.log(index);
+			
+			$("aside a").removeClass("active");
+			
+			$("aside a").eq(index).addClass("active");
+			$("section").hide().eq(index).show();
+		})
+		
+	</script>
+</html>

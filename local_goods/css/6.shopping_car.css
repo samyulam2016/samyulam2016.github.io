@@ -1,0 +1,196 @@
+body {
+  background: #fff;
+}
+header {
+  width: 100%;
+  height: 39px;
+  background: #f29004;
+  color: white;
+  font-size: 1.7rem;
+  line-height: 39px;
+  position: relative;
+}
+header .title {
+  width: 30%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  letter-spacing: 2px;
+}
+header .edit {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 2.6%;
+}
+section {
+  padding-bottom: 96px;
+}
+section .mui-table-view-cell.goods_wrap > .mui-active {
+  background-color: #fff;
+}
+section .mui-table-view-cell.goods_wrap {
+  padding: 11px 26px;
+}
+section .mui-media-object.pic_introduce {
+  max-width: 55px;
+  height: 55px;
+}
+section .goods_num_list {
+  position: absolute;
+  right: 2.6%;
+  bottom: 17px;
+  font-size: 1.4rem;
+  color: ;
+}
+section .goods_size {
+  font-size: 1.2rem;
+}
+section .goods_price {
+  color: red;
+  font-size: 1.2rem;
+}
+section .goods_num {
+  z-index: 99;
+}
+section .select_icon_shopping {
+  width: 19px;
+  height: 19px;
+  background: url("../active/pay_icon.png") no-repeat;
+  position: absolute;
+  background-size: 354.5px 30.5px;
+  background-position: -199px -6px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 10px;
+  z-index: 99;
+  display: none;
+}
+section .select_icon_shopping.active {
+  background-position: -168px -6px;
+}
+section .reduce,
+section .add {
+  display: inline-block;
+  width: 15px;
+  height: 16px;
+  border: 1px solid #C7C7CC;
+  border-radius: 50%;
+  line-height: 13px;
+  text-align: center;
+  color: orange;
+  display: none;
+}
+.close_account {
+  width: 100%;
+  height: 59px;
+  background: #f2f2f2;
+  font-size: 1.5rem;
+  position: fixed;
+  bottom: 52px;
+}
+.close_account .select_goods {
+  float: left;
+  line-height: 59px;
+  margin-left: 9.33%;
+  display: none;
+}
+.close_account .select_goods .select_all {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  background: url(../active/pay_icon.png) no-repeat;
+  position: absolute;
+  background-size: 354.5px 30.5px;
+  background-position: -199px -6px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 2.6%;
+}
+.close_account .select_goods .select_all.active {
+  background-position: -168px -6px;
+}
+.close_account .select_goods.active {
+  color: #F29004;
+}
+.close_account .total {
+  float: left;
+  margin-left: 6.66%;
+  margin-top: 13px;
+  font-size: 1.3rem;
+}
+.close_account .total .add_up {
+  color: #ed601b;
+}
+.close_account .total p {
+  font-size: 1.1rem;
+}
+.close_account .close_account_btn {
+  width: 33.86%;
+  height: 35px;
+  background: #ee4147;
+  float: right;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 13px;
+  margin-right: 2.6%;
+}
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  border-top: 1px solid #ccc;
+}
+footer a {
+  padding-top: 8px;
+  width: 20%;
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  color: #808080;
+}
+footer a:before {
+  content: "";
+  display: block;
+  height: 25px;
+  width: 25px;
+  margin: 0 auto;
+  background: url(../active/icon.png) no-repeat;
+  background-size: 216px 226px;
+}
+footer a:nth-of-type(1):before {
+  background-position: -71px -101px;
+}
+footer a.active:nth-of-type(1):before {
+  background-position: -71px -78px;
+}
+footer a:nth-of-type(2):before {
+  background-position: -47px -101px;
+}
+footer a.active:nth-of-type(2):before {
+  background-position: -47px -78px;
+}
+footer a:nth-of-type(3):before {
+  background-position: -22px -101px;
+}
+footer a.active:nth-of-type(3):before {
+  background-position: -23px -78px;
+}
+footer a:nth-of-type(4):before {
+  background-position: -96px -101px;
+}
+footer a.active:nth-of-type(4):before {
+  background-position: -96px -78px;
+}
+footer a:nth-of-type(5):before {
+  background-position: 0px -101px;
+}
+footer a.active:nth-of-type(5):before {
+  background-position: 0px -78px;
+}
+/*# sourceMappingURL=6.shopping_car.css.map */

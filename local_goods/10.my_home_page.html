@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/11.my_home_page.css" />
+		<script type="text/javascript" src="js/mui.min.js"></script>
+		<title></title>
+	</head>
+
+	<body>
+		<header>
+			<div class="head_portrait">
+				<img src="img/vip_flag.png" />
+			</div>
+			<div class="nick_name">凯丽_Kylie</div>
+			<div class="vip">
+				<span>股东会员</span>
+			</div>
+		</header>
+		<section>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<span class="span1"></span>
+					<a href="10.1.base_data.html" class="mui-navigate-right">基本资料</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<span class="span2"></span>
+					<a href="9.1.my_order_waitpay.html" class="mui-navigate-right">我的订单</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<span class="span3"></span>
+					<a class="mui-navigate-right">我的收藏</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<span class="span4"></span>
+					<a href="13.my_wallet.html" class="mui-navigate-right">我的钱包</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<span class="span5"></span>
+					<a href="6.1.goods_address.html" class="mui-navigate-right">收货地址</a>
+				</li>
+				<li class="mui-table-view-cell last-li">
+					<span class="span6"></span>
+					<a href="15.vip.html" class="mui-navigate-right">升级会员</a>
+				</li>
+				<li class="transition"></li>
+				<li class="mui-table-view-cell first-li">
+					<span class="span7"></span>
+					<a href="14.more.html" class="mui-navigate-right">更多</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<span class="span8"></span>
+					<a href="1.1.login.html" class="mui-navigate-right">注销</a>
+				</li>
+			</ul>
+		</section>
+		<footer class="clearfix">
+				<a href="2.1.home.html">首页</a>
+				<a href="17.vip_fix.html">会员杂锦</a>
+				<a href="7.1.sort.html">分类</a>
+				<a href="5.1.shopping_car.html">购物车</a>
+				<a href="10.my_home_page.html" class="active">我的</a>
+			</footer>
+	</body>
+	<script type="text/javascript">
+		mui.init();
+	</script>
+	<script type="text/javascript">
+		var sorts = document.querySelectorAll("footer a");
+		function change_sort(){
+			var before = 0;
+			for(var i = 0; i < sorts.length; i++){
+	sorts[i].index = i;			sorts[i].addEventListener("touchstart",function(){
+				sorts[before].className = "";
+				this.className = "active";
+				before = this.index;
+				})
+			}
+		}
+		change_sort();
+	</script>
+
+</html>

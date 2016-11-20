@@ -1,0 +1,212 @@
+.active{
+    color: #F29004;
+}
+body{
+    background: #f2f2f2;
+}
+header {
+    width: 100%;
+    height: 39px;
+    background: #f29004;
+    color: white;
+    font-size: 1.7rem;
+    line-height: 39px;
+    position: relative;
+    .title {
+        width: 30%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+}
+section{
+    width: 100%;
+    padding-bottom: 52px;
+    .spot {
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            li {
+                width: 9px;
+                height: 9px;
+                background: #fff;
+                border-radius: 50%;
+                display: inline-block;
+                margin-left: 10px;
+            }
+        }
+    .section_nav{
+        width: 100%;
+//      height: 140px;
+        background: #fff;        
+        box-sizing: border-box;
+        font-size: 1.25rem;
+        color: #666666;
+        position: relative;
+        .section_nav_header{
+            width: 100%;
+            height: 40px;
+        }
+        .section_nav_left,.section_nav_mid,.section_nav_right{
+            width: 33.33%;
+            height: 40px;
+            line-height: 40px;
+            float: left;
+            text-align: center;           
+            li{
+                display: inline-block;
+            }
+        }
+        .select_icon{
+            width: 10px;
+            height: 6px;
+            background: url(../active/sort_icon.png) no-repeat;
+            background-size: 30px 5.5px;
+            background-position: -12px 0;           
+        }
+        .select_icon.active{
+            background-position: 0px 0px;
+        }
+        .section_nav_content{
+            width: 100%;
+            height: 100px;
+            background: #fff; 
+            position: absolute;
+            top: 40px;
+            z-index: 99; 
+            display: none;
+            .section_nav_content_top,.section_nav_content_bottom{
+                box-sizing: border-box;
+                div{
+                    width: 19%;
+                    height: 27px;
+                    float: left;
+                    background: #f2f2f2;
+                    text-align: center;
+                    line-height: 27px;
+                    color: #666666; 
+                    border-radius: 5px;
+                    margin-left: 6.3%;                 
+                }
+                .active_sb{
+                    background: #F29004;
+                    color: #fff;
+                }
+                div:first-child{
+                    margin-left: 2.6%;
+                }            
+            }
+             .section_nav_content_top {
+                 margin-top: 13px;
+             }   
+             .section_nav_content_bottom{
+                   margin-top: 17px; 
+           }  
+        }
+    }
+    .section_content{
+        width: 100%;
+        background: #f2f2f2;
+        margin-top: 8px;
+        .section_content_detail{
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 7px;
+            .title_sort{
+                color: #4D4D4D;
+            }
+            img{
+                width: 86.56%;
+                margin: auto;
+            }    
+            .section_content_detail_left,.section_content_detail_right{
+                background: #fff;
+                width: 46.66%;
+                float: left;
+                margin-left: 2.6%;
+            }
+            .section_content_detail_right{
+                margin-left: 1.48%;
+            }
+            .price_sort_wrap{
+                background: #fff;
+                .price_sort{
+                    color: red;
+                    font-size: 1.6rem;
+                    margin-left: 5.6%;
+                }
+                .init_price{
+                    color: #666666;
+                    margin-left: 3.2%;
+                    text-decoration: line-through;
+                }
+            }
+            .title_sort{
+                margin: auto;
+                background: #fff;
+                width: 86.56%;
+            }
+        }
+    }
+}
+footer{
+    width: 100%; 
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    border-top: 1px solid #ccc;
+    a{
+        padding-top: 8px;
+        width: 20%;
+        font-size: 1.1rem;
+        float: left;
+        box-sizing: border-box;
+        text-align: center;
+        text-decoration: none;
+        color: #808080;
+    }
+    a:before{
+        content: "";//这句话必须写，不然没内容
+        display: block;
+        height: 25px;
+        width: 25px;
+        //这句使before元素居中
+        margin: 0 auto;
+        background: url(../active/icon.png) no-repeat;
+        background-size: 216px 226px;     
+    }
+    a:nth-of-type(1):before{
+         background-position: -71px -101px;
+    }
+    a.active:nth-of-type(1):before{
+         background-position: -71px -78px;
+    }
+    a:nth-of-type(2):before{
+         background-position: -47px -101px;
+    }
+    a.active:nth-of-type(2):before{
+         background-position: -47px -78px;
+    }
+    a:nth-of-type(3):before{
+         background-position: -22px -101px;
+    }
+    a.active:nth-of-type(3):before{
+         background-position: -22.5px -78px;
+    }
+     a:nth-of-type(4):before{
+         background-position: -96px -101px;
+    }
+    a.active:nth-of-type(4):before{
+         background-position: -96px -78px;
+    }
+     a:nth-of-type(5):before{
+         background-position: 0px -101px;
+    }
+    a.active:nth-of-type(5):before{
+         background-position: 0px -78px;
+    }
+}

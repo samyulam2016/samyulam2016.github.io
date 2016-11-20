@@ -1,0 +1,132 @@
+body {
+  background-color: #f2f2f2;
+}
+header {
+  width: 100%;
+  height: 39px;
+  background: #f29004;
+  color: white;
+  font-size: 1.7rem;
+  line-height: 39px;
+  position: relative;
+}
+header div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+header div:nth-child(1) {
+  width: 2.93%;
+  height: 18px;
+  left: 3.6%;
+  background: url("../active/left.png") no-repeat;
+}
+header div:nth-child(2) {
+  width: 21.3%;
+  left: 50%;
+  right: 50%;
+  margin-left: -10.65%;
+  text-align: center;
+}
+header .bill {
+  position: absolute;
+  right: 3.6%;
+  font-size: 1.4rem;
+  color: #fff;
+}
+section .section_header {
+  text-align: center;
+}
+section .section_header img {
+  width: 81px;
+  margin: 58px auto 0;
+}
+section .section_header p {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: darkgray;
+  text-align: center;
+}
+section .section_header h2 {
+  margin-top: 10px;
+  font-size: 2.3rem;
+  text-align: center;
+  margin-left: -12px;
+}
+section .section_content {
+  width: 89.2%;
+  height: 100px;
+  background: #fff;
+  margin: auto;
+  padding: 0 2.8%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 60px;
+}
+section .section_content .section_content_top {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.4rem;
+}
+section .section_content .section_content_top span {
+  display: inline-block;
+}
+section .section_content .section_content_top span:first-child {
+  width: 31px;
+  height: 31px;
+  background: url("../active/pay_icon.png") no-repeat;
+  background-size: 354.5px 30.5px;
+  vertical-align: middle;
+  margin-left: 13px;
+  margin-right: 13px;
+}
+section .section_content .section_content_top span:last-child {
+  width: 18.5px;
+  height: 18.5px;
+  background: url("../active/pay_icon.png") no-repeat;
+  background-size: 354.5px 30.5px;
+  background-position: -199px -6px;
+  float: right;
+  margin-top: 15px;
+  margin-right: 13px;
+}
+section .section_content .section_content_top span:last-child.active {
+  background-position: -168px -6px;
+}
+section .section_content .section_content_top span:first-child.weixin {
+  background-position: -55px 0;
+}
+section .section_content .section_content_top1 {
+  border-bottom: none;
+}
+section .top_up {
+  display: block;
+  width: 85.33%;
+  background: #26c08a;
+  line-height: 46px;
+  text-align: center;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  margin: auto;
+  border-radius: 7px;
+  margin-top: 53px;
+}
+section .top_up span {
+  margin-left: 8px;
+}
+::-webkit-input-placeholder {
+  color: #000;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #000;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #000;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #000;
+}
+/*# sourceMappingURL=14.my_wallet.css.map */

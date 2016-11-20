@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/12.order_details.css" />
+		<script type="text/javascript" src="js/mui.min.js"></script>
+		<title></title>
+	</head>
+
+	<body>
+		<header>
+			<li>&nbsp;</li>
+			<li>订单详情</li>
+		</header>
+		<section>
+		<a href="###">
+				<div class="person_details">
+				<ul class="person_details_header clearfix">
+					<li class="person_name">刘晓心</li>
+					<li class="person_phone">13562021254</li>
+				</ul>
+				<ul class="person_details_footer">
+					<span class="address">广州市天河区东圃时代TIT广场第十九座56号</span>
+				</ul>
+				<div class="right_icon"></div>
+			</div>
+		</a>
+			
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell buy_goods">
+				<span>购买商品</span>
+				<span class="wait_getGoods">待收货</span>
+				<span class="return_g_btn">申请退货</span>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a href="javascript:;">
+					<img class="mui-media-object mui-pull-left" src="img/songshu_food1.png">
+					<div class="mui-media-body">
+						<span class="goods_title">坚果特产山核桃奶油味碧跟...</span>
+						<p class='mui-ellipsis goods_size'>
+							规格:&nbsp;&nbsp;一盒六片
+						</p>
+						<p class="goods_num">x2</p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell carriage clearfix">
+				<span>运费:</span>
+				<span class="carriage_price">￥10</span>
+			</li>
+			<ul class="mui-table-view remarks_list">
+    				<li class="mui-table-view-cell remarks">备注:</li>   
+			</ul>
+			<div class="transition"></div>
+		</ul>
+		<div class="order_messages">
+			<div class="message">订单信息</div>
+			<div><span>订单编号:</span><span class="order_num">SKYJ12525441</span></div>
+			<div><span>创建时间:</span><span></span class="order_time">2015-10-02&nbsp;&nbsp;12：20</div>
+			<div><span>付款时间:</span><span class="pay_time">2015-10-02&nbsp;&nbsp;12：36</span></div>
+			<div><span>物流信息:</span><span  class="logistics">申通物流&nbsp;&nbsp;5221255142</span></div>
+		</div>
+		</section>
+		<footer class="clearfix">
+			<button>确认收货</button>
+		</footer>
+		<div class="return_goods_message">
+			<div class="return_goods_message_header">
+				<span class="askfor_return_money">申请退款</span>
+				<span class="mui-icon mui-icon-closeempty"></span>
+			</div>
+			<div class="return_goods_reason clearfix">
+				<div class="return_goods_reason_left">退货原因&nbsp;<span>*</span>:</div>
+				<div class="return_goods_reason_mid">
+					<span class="reason_txt">请选择退款原因</span>
+					<div><span></span></div>
+					<ul class="return_reason_content">
+					<li>收到商品破损</li>
+					<li>商品发错&nbsp;/&nbsp;漏发</li>
+					<li>收到商品描述不符</li>
+					<li>商品质量问题</li>
+				</ul>
+				</div>
+				<span class="return_goods_reason_right"><span>*</span>选项必填</span>				
+			</div>
+			<div class="return_money">
+				退款金额&nbsp;<span>*</span>:<input type="text" />
+			</div>
+			<div class="return_explain">
+				退款说明&nbsp;&nbsp;:
+				<textarea id="return_explain_txt" cols="30" rows="10"></textarea>
+			</div>
+			<div class="upload_evidence">
+				上传凭证&nbsp;&nbsp;: <span>选择要上传的图片<input type="file" class="upload_pic"/></span>
+			</div>
+			<div class="upload_explain">
+				每张图片大小不超过5M,最多3张,支持JPG、PNG、BMP格式
+			</div>
+			<div class="upload_pic">
+				<img src="img/upload_pic.png"/>
+				<img src="img/upload_pic.png"/>
+				<img src="img/upload_pic.png"/>
+			</div>
+			<button>提交</button>
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		mui.init();
+	</script>
+	<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="js/11.order_details.js"></script>
+
+</html>

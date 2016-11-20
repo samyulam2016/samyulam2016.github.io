@@ -1,0 +1,82 @@
+@import "common.less";
+/***** header ******/
+#header {
+	min-width: @minW;
+	.bor {
+		border-right: 1px solid @c66;
+	}
+	.nav-wrap {
+		width: 100%;
+		background-color: @cee;
+
+		.nav {
+			width: @minW;
+			margin: 0 auto;
+			.left {
+				float: left;
+			}
+			.right {
+				float: right;
+				overflow: hidden;
+				li {
+					float: left;
+				}
+
+				.item:hover {
+					color: #C81623;
+				}
+			}
+			.phone {
+				&:before {
+					content: "";
+					display: inline-block;
+					width: 11px;
+					height: 15px;
+					background: url(../img/icons.png) no-repeat;
+					background-position: -1px -55px;
+					vertical-align: middle;
+					margin-right: 5px;
+				}
+			}
+			.bor {
+				padding-right: 17px;
+				margin-right: 17px;
+			}
+			span, a {
+				font-size: @fs12;
+				color: @c66;
+				line-height: 34px;
+			}
+		}
+	}
+	.head-wrap {
+		width: 100%;
+		.head {
+			width: 1180px;
+			margin: 0 auto;
+			padding: 25px 0;
+			height: 80px;
+
+			.left {
+				float: left;
+				a {
+					display: block;
+				}
+			}
+			.right {
+				float: right;
+
+				a {
+					font-size: @fs18;
+					color: @c66;
+					line-height: 80px;
+				}
+				.bor {
+					padding-right: 30px;
+					margin-right: 30px;
+				}
+			}
+		}
+	}
+}
+/***** header ******/
